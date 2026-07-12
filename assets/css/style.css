@@ -6,8 +6,8 @@
 
 :root{
 
-    --primary:#45ff84;
-    --primary-dark:#2ed96b;
+    --primary:hwb(204 27% 0%);
+    --primary-dark:#1c56f8;
 
     --background:#080b11;
     --background2:#10151f;
@@ -129,7 +129,7 @@ header::before{
         linear-gradient(rgba(0,0,0,.55),
         rgba(0,0,0,.75)),
 
-        url("../img/hero.webp");
+        url("../img/hero.png");
 
     background-size:cover;
 
@@ -1014,7 +1014,7 @@ footer strong{
 
     border-radius:50%;
 
-    background:rgba(69,255,132,.12);
+    background:rgba(12, 219, 255, 0.274);
 
     filter:blur(120px);
 

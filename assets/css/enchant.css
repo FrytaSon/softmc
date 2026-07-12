@@ -20,7 +20,13 @@
     justify-content:center;
 
     overflow:hidden;
+    
 
+}
+
+.enchant-header img{
+    animation:glowAnimation 5s ease-in-out infinite;
+    padding-left: 250px;
 }
 
 .enchant-header .hero{

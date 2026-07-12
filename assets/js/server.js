@@ -59,8 +59,7 @@ async function updateServerStatus() {
 
         if (data.version) {
 
-            elements.version.innerHTML =
-                data.version.name_clean;
+            elements.version.innerHTML = "1.21.x";
 
         }
 
