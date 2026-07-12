@@ -1,0 +1,426 @@
+/* ==========================================
+   SoftMC.eu
+   Footer
+========================================== */
+
+footer{
+
+    position:relative;
+
+    margin-top:120px;
+
+    background:#05070b;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   Glow
+========================================== */
+
+footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-250px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(69,255,132,.12),
+
+        transparent 70%
+
+    );
+
+    filter:blur(80px);
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+   Footer Top
+========================================== */
+
+.footer-top{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:80px 20px 50px;
+
+}
+
+.footer-top img{
+
+    width:220px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.footer-top img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.footer-top p{
+
+    color:#bfc8d4;
+
+    font-size:18px;
+
+    max-width:650px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   Footer Grid
+========================================== */
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:50px;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:70px 8%;
+
+}
+
+.footer-grid h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+.footer-grid a{
+
+    display:block;
+
+    color:#bfc8d4;
+
+    text-decoration:none;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer-grid a:hover{
+
+    color:var(--primary);
+
+    transform:translateX(8px);
+
+}
+
+.footer-grid p{
+
+    color:#bfc8d4;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+   Footer Bottom
+========================================== */
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 8%;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.footer-bottom p{
+
+    color:#9ea9b6;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   Social
+========================================== */
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.footer-social a{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+    background:var(--primary);
+
+    color:#111;
+
+    border-color:var(--primary);
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   Server Box
+========================================== */
+
+.footer-server{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:35px;
+
+    padding:18px 30px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+}
+
+.footer-server strong{
+
+    color:var(--primary);
+
+}
+
+.footer-server button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:#111;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.footer-server button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   Footer Divider
+========================================== */
+
+.footer-divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:
+
+    linear-gradient(
+
+        to right,
+
+        transparent,
+
+        var(--primary),
+
+        transparent
+
+    );
+
+    margin:35px auto;
+
+}
+
+/* ==========================================
+   Copyright
+========================================== */
+
+.copyright{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#8d98a5;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   Hover Animation
+========================================== */
+
+.footer-grid a::before{
+
+    content:"›";
+
+    opacity:0;
+
+    margin-right:0;
+
+    transition:.3s;
+
+}
+
+.footer-grid a:hover::before{
+
+    opacity:1;
+
+    margin-right:8px;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:1000px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:650px){
+
+    .footer-top{
+
+        padding:60px 25px 40px;
+
+    }
+
+    .footer-top img{
+
+        width:170px;
+
+    }
+
+    .footer-server{
+
+        flex-direction:column;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+}

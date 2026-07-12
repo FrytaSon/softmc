@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoftMC.eu • Polski Serwer Minecraft</title>
+
+    <meta name="description" content="SoftMC.eu - Nowoczesny polski serwer Minecraft Survival + Działki oraz SkyBlock.">
+
+    <meta name="keywords" content="minecraft, survival, działki, skyblock, softmc, serwer minecraft">
+
+    <meta name="theme-color" content="#45ff84">
+
+    <meta property="og:title" content="SoftMC.eu">
+
+    <meta property="og:description" content="Najlepszy serwer Survival + Działki oraz SkyBlock">
+
+    <meta property="og:image" content="assets/img/logo.png">
+
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/navbar.css">
+
+    <link rel="stylesheet" href="assets/css/hero.css">
+
+    <link rel="stylesheet" href="assets/css/cards.css">
+
+    <link rel="stylesheet" href="assets/css/sections.css">
+
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ============================= -->
+
+    <div id="particles"></div>
+
+    <div class="hero-glow"></div>
+
+    <!-- ============================= -->
+
+    <nav>
+
+        <a href="#" class="logo">
+
+            <img src="assets/img/logo.png" alt="SoftMC">
+
+        </a>
+
+        <ul>
+
+            <li><a class="active" href="#">Start</a></li>
+
+            <li><a href="#gamemodes">Tryby</a></li>
+
+            <li><a href="pages/enchanty.html">Enchanty</a></li>
+
+            <li><a href="#news">Aktualności</a></li>
+
+            <li><a href="#staff">Administracja</a></li>
+
+            <li><a href="#discord">Discord</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <div class="server-pill">
+
+                <span class="dot"></span>
+
+                <span id="server-status-nav">
+
+                    ONLINE
+
+                </span>
+
+            </div>
+
+            <button class="copy-ip" onclick="copyIP()">
+
+                <span>
+
+                    📋 softmc.eu
+
+                </span>
+
+            </button>
+
+            <a class="discord-btn" href="#discord">
+
+                💬
+
+            </a>
+
+        </div>
+
+        <div class="mobile-toggle">
+
+            <i>☰</i>
+
+        </div>
+
+    </nav>
+
+    <!-- ============================= -->
+
+    <header>
+
+        <div class="hero-background">
+
+            <img src="assets/img/hero.webp" alt="Minecraft">
+
+        </div>
+
+        <section class="hero">
+
+            <!-- LEFT -->
+
+            <div class="hero-left">
+
+                <img class="hero-logo" src="assets/img/logo.png" alt="SoftMC">
+
+                <h1 class="hero-title">
+
+                    SOFTMC.EU
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Dołącz do nowoczesnego polskiego serwera Minecraft.
+
+                    Graj na trybie
+
+                    <span class="highlight">Survival + Działki</span>
+
+                    oraz
+
+                    <span class="highlight">SkyBlock</span>.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="copy-ip" onclick="copyIP()">
+
+                        📋 Skopiuj IP
+
+                    </button>
+
+                    <a href="#gamemodes">
+
+                        Poznaj serwer
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="hero-right">
+
+                <div class="live-card">
+
+                    <div class="live-header">
+
+                        <h2>
+
+                            SoftMC LIVE
+
+                        </h2>
+
+                        <p>
+
+                            Aktualny status serwera
+
+                        </p>
+
+                        <div class="server-status">
+
+                            <span class="circle"></span>
+
+                            <span id="server-status">
+
+                                Ładowanie...
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="live-stats">
+
+                        <div class="live-item">
+
+                            <span class="live-label">
+
+                                👥 Gracze
+
+                            </span>
+
+                            <span class="live-value online">
+
+                                <span id="players-online">
+
+                                    ...
+
+                                </span>
+
+                                /
+
+                                <span id="players-max">
+
+                                    ...
+
+                                </span>
+
+                            </span>
+
+                        </div>
+
+                        <div class="live-item">
+
+                            <span class="live-label">
+
+                                📡 Ping
+
+                            </span>
+
+                            <span id="server-ping" class="live-value">
+
+                                ...
+
+                            </span>
+
+                        </div>
+
+                        <div class="live-item">
+
+                            <span class="live-label">
+
+                                🎮 Wersja
+
+                            </span>
+
+                            <span id="server-version" class="live-value">
+
+                                1.20-1.21.6
+
+                            </span>
+
+                        </div>
+
+                        <div class="live-item">
+
+                            <span class="live-label">
+
+                                🖥 IP
+
+                            </span>
+
+                            <span class="live-value">
+
+                                softmc.eu
+
+                            </span>
+
+                        </div>
+
+                        <div id="server-motd" class="live-motd">
+
+                            Ładowanie MOTD...
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="hero-scroll">
+
+            <span>
+
+                Przewiń
+
+            </span>
+
+            <i>
+
+                ↓
+
+            </i>
+
+        </div>
+
+    </header>
+    <!-- ===================================================== -->
+    <!-- TRYBY GRY -->
+    <!-- ===================================================== -->
+
+    <section id="gamemodes">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                WYBIERZ SWÓJ TRYB
+            </span>
+
+            <h2 class="section-title">
+                Rozgrywka dopasowana do Ciebie
+            </h2>
+
+            <p class="section-description">
+                SoftMC oferuje dwa wyjątkowe tryby rozgrywki.
+                Niezależnie od tego czy lubisz klasyczny Survival,
+                czy budowanie własnej wyspy – znajdziesz coś dla siebie.
+            </p>
+
+        </div>
+
+        <div class="gamemode-grid">
+
+            <!-- Survival -->
+
+            <article class="card gamemode-card">
+
+                <div class="badge">
+
+                    ONLINE
+
+                </div>
+
+                <div class="card-image">
+
+                    <img src="assets/img/survival.png" alt="Survival">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3 class="card-title">
+
+                        🌲 Survival + Działki
+
+                    </h3>
+
+                    <p class="card-text">
+
+                        Klasyczny Survival wzbogacony
+                        o własne działki, ekonomię,
+                        sklepy graczy, aukcje,
+                        skrzynki, eventy
+                        oraz rozbudowany system rang.
+
+                    </p>
+
+                    <a href="#" class="card-button">
+
+                        Zagraj →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- SkyBlock -->
+
+            <article class="card gamemode-card">
+
+                <div class="badge">
+
+                    JUŻ WKRÓTCE
+
+                </div>
+
+                <div class="card-image">
+
+                    <img src="assets/img/skyblock.png" alt="SkyBlock">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3 class="card-title">
+
+                        ☁ SkyBlock
+
+                    </h3>
+
+                    <p class="card-text">
+
+                        Rozwijaj własną wyspę,
+                        wykonuj zadania,
+                        zdobywaj coraz lepsze
+                        wyposażenie i walcz
+                        o miejsce w rankingach.
+
+                    </p>
+
+                    <a href="#" class="card-button">
+
+                        Dowiedz się więcej
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- STATYSTYKI -->
+    <!-- ===================================================== -->
+
+    <section id="stats">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+
+                SOFTMC W LICZBACH
+
+            </span>
+
+            <h2 class="section-title">
+
+                Statystyki serwera
+
+            </h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="card stat-card">
+
+                <div id="players-online-big" class="stat-number">
+
+                    0
+
+                </div>
+
+                <div class="stat-title">
+
+                    Graczy Online
+
+                </div>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <div class="stat-number">
+
+                    1.20-1.21.6
+
+                </div>
+
+                <div class="stat-title">
+
+                    Obsługiwane wersje
+
+                </div>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <div id="server-state" class="stat-number">
+
+                    ONLINE
+
+                </div>
+
+                <div class="stat-title">
+
+                    Status serwera
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DLACZEGO SOFTMC -->
+    <!-- ===================================================== -->
+
+    <section id="features">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+
+                DLACZEGO MY?
+
+            </span>
+
+            <h2 class="section-title">
+
+                Co wyróżnia SoftMC?
+
+            </h2>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="card feature-card">
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <h3 class="feature-title">
+
+                    Stabilny serwer
+
+                </h3>
+
+                <p class="feature-text">
+
+                    Wysoka wydajność,
+                    niskie opóźnienia
+                    oraz płynna rozgrywka 24/7.
+
+                </p>
+
+            </div>
+
+            <div class="card feature-card">
+
+                <div class="feature-icon">
+                    🛡
+                </div>
+
+                <h3 class="feature-title">
+
+                    Aktywna administracja
+
+                </h3>
+
+                <p class="feature-text">
+
+                    Zespół administratorów
+                    codziennie czuwa
+                    nad bezpieczeństwem serwera.
+
+                </p>
+
+            </div>
+
+            <div class="card feature-card">
+
+                <div class="feature-icon">
+                    💰
+                </div>
+
+                <h3 class="feature-title">
+
+                    Rozbudowana ekonomia
+
+                </h3>
+
+                <p class="feature-text">
+
+                    Handluj,
+                    zarabiaj
+                    i rozwijaj swoje imperium.
+
+                </p>
+
+            </div>
+
+            <div class="card feature-card">
+
+                <div class="feature-icon">
+                    🎉
+                </div>
+
+                <h3 class="feature-title">
+
+                    Eventy
+
+                </h3>
+
+                <p class="feature-text">
+
+                    Regularne wydarzenia
+                    z atrakcyjnymi nagrodami.
+
+                </p>
+
+            </div>
+
+            <div class="card feature-card">
+
+                <div class="feature-icon">
+                    ❤️
+                </div>
+
+                <h3 class="feature-title">
+
+                    Świetna społeczność
+
+                </h3>
+
+                <p class="feature-text">
+
+                    Miła atmosfera,
+                    aktywni gracze
+                    i wspólna zabawa.
+
+                </p>
+
+            </div>
+
+            <div class="card feature-card">
+
+                <div class="feature-icon">
+                    🚀
+                </div>
+
+                <h3 class="feature-title">
+
+                    Stały rozwój
+
+                </h3>
+
+                <p class="feature-text">
+
+                    Regularne aktualizacje,
+                    nowe funkcje
+                    i świeża zawartość.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================================================== -->
+    <!-- AKTUALNOŚCI -->
+    <!-- ===================================================== -->
+
+    <section id="news">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+
+                NOWOŚCI
+
+            </span>
+
+            <h2 class="section-title">
+
+                Aktualności z serwera
+
+            </h2>
+
+            <p class="section-description">
+
+                Bądź na bieżąco z nowymi funkcjami,
+                eventami oraz zmianami na SoftMC.
+
+            </p>
+
+        </div>
+
+        <div class="news-grid">
+
+            <article class="card news-card">
+
+                <div class="news-image">
+
+                    <img src="assets/img/news/news1.webp" alt="Nowość">
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-date">
+
+                        12 Lipca 2026
+
+                    </div>
+
+                    <h3 class="news-title">
+
+                        Otwarcie serwera SoftMC
+
+                    </h3>
+
+                    <p class="news-text">
+
+                        Rozpoczynamy nową przygodę!
+                        Dołącz już dziś i odbierz nagrody
+                        na start.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card news-card">
+
+                <div class="news-image">
+
+                    <img src="assets/img/news/news2.webp" alt="Event">
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-date">
+
+                        Wkrótce
+
+                    </div>
+
+                    <h3 class="news-title">
+
+                        Wielki Event PvP
+
+                    </h3>
+
+                    <p class="news-text">
+
+                        Już niedługo wystartuje pierwszy
+                        turniej PvP z cennymi nagrodami.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card news-card">
+
+                <div class="news-image">
+
+                    <img src="assets/img/news/news3.webp" alt="SkyBlock">
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-date">
+
+                        W przygotowaniu
+
+                    </div>
+
+                    <h3 class="news-title">
+
+                        SkyBlock
+
+                    </h3>
+
+                    <p class="news-text">
+
+                        Intensywnie pracujemy nad
+                        trybem SkyBlock.
+                        Więcej informacji już wkrótce.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- ADMINISTRACJA -->
+    <!-- ===================================================== -->
+
+    <section id="staff">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+
+                NASZ ZESPÓŁ
+
+            </span>
+
+            <h2 class="section-title">
+
+                Administracja SoftMC
+
+            </h2>
+
+            <p class="section-description">
+
+                Poznaj osoby, które dbają o rozwój
+                i bezpieczeństwo serwera.
+
+            </p>
+
+        </div>
+
+        <div class="staff-grid">
+
+            <article class="card staff-card">
+
+                <div class="staff-avatar">
+
+                    <img src="https://minotar.net/helm/Bajdix/256.png" alt="Bajdix">
+
+                </div>
+
+                <h3 class="staff-name">
+
+                    Bajdix
+
+                </h3>
+
+                <div class="staff-rank">
+
+                    Właściciel
+
+                </div>
+
+                <p class="staff-description">
+
+                    Założyciel projektu SoftMC,
+                    odpowiedzialny za rozwój serwera.
+
+                </p>
+
+            </article>
+
+            <article class="card staff-card">
+
+                <div class="staff-avatar">
+
+                    <img src="https://minotar.net/helm/XMaKiraX/256.png" alt="Technik">
+
+                </div>
+
+                <h3 class="staff-name">
+
+                    XMaKiraX
+
+                </h3>
+
+                <div class="staff-rank">
+
+                    Technik
+
+                </div>
+
+                <p class="staff-description">
+
+                    Coś nie coś potrafi,
+                    wsparcie techniczne
+                    oraz mentalne.
+
+                </p>
+
+            </article>
+
+            <article class="card staff-card">
+
+                <div class="staff-avatar">
+
+                    <img src="https://minotar.net/helm/FRYTASON/256.png" alt="Moderator">
+
+                </div>
+
+                <h3 class="staff-name">
+
+                    FRYTASON
+
+                </h3>
+
+                <div class="staff-rank">
+
+                    Technik
+
+                </div>
+
+                <p class="staff-description">
+
+                    Żyje od 10 do 10,
+                    Opierdziela się
+                    ale jak coś zrobi to szkoda gadać.
+
+                </p>
+
+            </article>
+
+            <article class="card staff-card">
+
+                <div class="staff-avatar">
+
+                    <img src="https://minotar.net/helm/zyrek123/256.png" alt="Builder">
+
+                </div>
+
+                <h3 class="staff-name">
+
+                    Zyrek123
+
+                </h3>
+
+                <div class="staff-rank">
+
+                    Budowniczy
+
+                </div>
+
+                <p class="staff-description">
+
+                    Tworzy mapy,
+                    spawn oraz nowe lokacje.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- GALERIA -->
+    <!-- ===================================================== -->
+
+    <section id="gallery">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+
+                GALERIA
+
+            </span>
+
+            <h2 class="section-title">
+
+                Zobacz świat SoftMC
+
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/1.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/2.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/3.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/4.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/5.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/6.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/7.webp" alt="Galeria">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="assets/img/gallery/8.webp" alt="Galeria">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DISCORD -->
+    <!-- ===================================================== -->
+
+    <section id="discord">
+
+        <div class="discord-box">
+
+            <h2>
+
+                Dołącz do społeczności SoftMC
+
+            </h2>
+
+            <p>
+
+                Rozmawiaj z innymi graczami,
+                bierz udział w konkursach,
+                śledź nowości i otrzymuj
+                informacje o eventach.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://discord.gg/TWOJ_LINK" target="_blank">
+
+                    💬 Dołącz na Discord
+
+                </a>
+
+                <button class="copy-ip" onclick="copyIP()">
+
+                    📋 Skopiuj IP
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================================================== -->
+    <!-- FAQ -->
+    <!-- ===================================================== -->
+
+    <section id="faq">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+
+                FAQ
+
+            </span>
+
+            <h2 class="section-title">
+
+                Najczęściej zadawane pytania
+
+            </h2>
+
+            <p class="section-description">
+
+                Kilka odpowiedzi na pytania,
+                które najczęściej zadają nowi gracze.
+
+            </p>
+
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    Na jakiej wersji mogę grać?
+
+                </div>
+
+                <div class="faq-answer">
+
+                    Serwer obsługuje wersje od
+                    <strong>1.20</strong>
+                    do
+                    <strong>1.21.6</strong>.
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    Jak dołączyć?
+
+                </div>
+
+                <div class="faq-answer">
+
+                    Dodaj serwer
+
+                    <strong>softmc.eu</strong>
+
+                    do listy serwerów Minecraft.
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    Czy serwer posiada sklep?
+
+                </div>
+
+                <div class="faq-answer">
+
+                    Tak.
+
+                    Zakup rang oraz usług będzie
+                    dostępny w zakładce
+                    <strong>Sklep</strong>.
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    Czy mogę grać z kolegami?
+
+                </div>
+
+                <div class="faq-answer">
+
+                    Oczywiście!
+
+                    Możecie wspólnie budować,
+                    zakładać działki
+                    oraz handlować.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer>
+
+        <div class="footer-top">
+
+            <img src="assets/img/logo.png" alt="SoftMC">
+
+            <p>
+
+                Nowoczesny polski serwer Minecraft.
+
+            </p>
+
+        </div>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>
+
+                    Serwer
+
+                </h3>
+
+                <a href="#">
+
+                    Start
+
+                </a>
+
+                <a href="#gamemodes">
+
+                    Tryby
+
+                </a>
+
+                <a href="pages/enchanty.html">
+
+                    Enchanty
+
+                </a>
+
+                <a href="#faq">
+
+                    FAQ
+
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Społeczność
+
+                </h3>
+
+                <a href="#discord">
+
+                    Discord
+
+                </a>
+
+                <a href="pages/sklep.html">
+
+                    Sklep
+
+                </a>
+
+                <a href="pages/glosowanie.html">
+
+                    Głosowanie
+
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Kontakt
+
+                </h3>
+
+                <p>
+
+                    support@softmc.eu
+
+                </p>
+
+                <p>
+
+                    softmc.eu
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SoftMC.eu
+
+                Wszelkie prawa zastrzeżone.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================================== -->
+    <!-- BACK TO TOP -->
+    <!-- ===================================================== -->
+
+    <button id="backToTop" class="back-to-top">
+
+        ↑
+
+    </button>
+
+    <!-- ===================================================== -->
+    <!-- LOADER -->
+    <!-- ===================================================== -->
+
+    <div class="loader">
+
+        <div class="loader-logo">
+
+            <img src="assets/img/logo.png" alt="SoftMC">
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- SCRIPTS -->
+    <!-- ===================================================== -->
+
+    <script src="assets/js/server.js"></script>
+
+    <script src="assets/js/navbar.js"></script>
+
+    <script src="assets/js/particles.js"></script>
+
+    <script src="assets/js/hero.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,693 @@
+/* ==========================================
+   SoftMC.eu
+   HERO
+========================================== */
+
+header{
+
+    position:relative;
+
+    width:100%;
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+
+}
+
+/* ==========================
+   Background
+========================== */
+
+.hero-background{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-3;
+
+    overflow:hidden;
+
+}
+
+.hero-background img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    animation:heroZoom 18s ease-in-out infinite;
+
+}
+
+.hero-background::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            rgba(8,11,17,.45),
+            rgba(8,11,17,.92)
+        ),
+
+        radial-gradient(
+            circle at top,
+            rgba(69,255,132,.15),
+            transparent 60%
+        );
+
+}
+
+/* ==========================
+   Hero Container
+========================== */
+
+.hero{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:140px 8% 80px;
+
+}
+
+/* ==========================
+   Left
+========================== */
+
+.hero-left{
+
+    animation:fadeLeft .9s ease;
+
+}
+
+.hero-logo{
+
+    width:420px;
+
+    margin-bottom:35px;
+
+    filter:
+        drop-shadow(0 0 35px rgba(69,255,132,.25));
+
+}
+
+.hero-title{
+
+    font-size:82px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    margin-bottom:25px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #9affc0,
+            #ffffff
+        );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:titleGradient 8s linear infinite;
+
+}
+
+.hero-description{
+
+    font-size:20px;
+
+    color:#c8d0d9;
+
+    line-height:1.9;
+
+    max-width:650px;
+
+}
+
+.hero-description strong{
+
+    color:var(--primary);
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:45px;
+
+}
+
+.hero-buttons a,
+.hero-buttons button{
+
+    min-width:180px;
+
+    height:58px;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.hero-buttons button{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #6effa3
+    );
+
+    color:#111;
+
+    box-shadow:0 10px 30px rgba(69,255,132,.25);
+
+}
+
+.hero-buttons button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 40px rgba(69,255,132,.40);
+
+}
+
+.hero-buttons a{
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:white;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.hero-buttons a:hover{
+
+    border-color:var(--primary);
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================
+   Live Card
+========================== */
+
+.hero-right{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    animation:fadeRight .9s ease;
+
+}
+
+.live-card{
+
+    width:430px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:
+
+        rgba(18,24,33,.78);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.live-header{
+
+    padding:30px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.live-header h2{
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.live-header p{
+
+    color:#9fb0bf;
+
+}
+
+.server-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#5bff96;
+
+    font-weight:700;
+
+    margin-top:18px;
+
+}
+
+.server-status .circle{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#5bff96;
+
+    animation:pulseOnline 1.8s infinite;
+
+}
+
+/* ==========================
+   Stats
+========================== */
+
+.live-stats{
+
+    padding:25px;
+
+}
+
+.live-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.live-item:last-child{
+
+    border:none;
+
+}
+
+.live-label{
+
+    color:#9eb0c2;
+
+}
+
+.live-value{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.live-value.online{
+
+    color:#57ff8b;
+
+}
+
+/* ==========================
+   MOTD
+========================== */
+
+.live-motd{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.03);
+
+    color:#d6dde5;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   Scroll
+========================== */
+
+.hero-scroll{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:35px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    color:#d0d6dd;
+
+    animation:bounce 2s infinite;
+
+}
+
+.hero-scroll i{
+
+    font-size:26px;
+
+    margin-top:10px;
+
+}
+
+/* ==========================
+   Glow
+========================== */
+
+.hero-glow{
+
+    position:absolute;
+
+    right:-200px;
+
+    top:120px;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(69,255,132,.22),
+
+            transparent 70%
+
+        );
+
+    filter:blur(80px);
+
+    z-index:-2;
+
+}
+
+/* ==========================
+   Animations
+========================== */
+
+@keyframes heroZoom{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes titleGradient{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+@keyframes bounce{
+
+    0%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,10px);
+
+    }
+
+    100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:1100px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero-left{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-right{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .hero{
+
+        padding-top:120px;
+
+    }
+
+    .hero-logo{
+
+        width:250px;
+
+    }
+
+    .hero-title{
+
+        font-size:48px;
+
+    }
+
+    .hero-description{
+
+        font-size:17px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .hero-buttons button,
+    .hero-buttons a{
+
+        width:100%;
+
+    }
+
+    .live-card{
+
+        width:100%;
+
+    }
+
+}
+/* ==========================================
+   Hero Light
+========================================== */
+
+.hero{
+
+    overflow:hidden;
+
+}
+
+.hero-light{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(69,255,132,.18),
+
+            transparent 70%
+
+        );
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    filter:blur(35px);
+
+    opacity:.9;
+
+    transition:
+        left .08s linear,
+        top .08s linear;
+
+}

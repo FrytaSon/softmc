@@ -1,0 +1,1631 @@
+[
+    {
+        "id": 1,
+        "name": "Abiding",
+        "rarity": "Legendary",
+        "maxLevel": 1,
+        "items": ["Weapon"],
+        "description": "Broń z tym enchantem staje się niezniszczalna.",
+        "conflicts": []
+    },
+    {
+        "id": 2,
+        "name": "Aegis",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Boots"],
+        "description": "Szansa na otrzymanie efektu Szybkości po otrzymaniu obrażeń od upadku.",
+        "conflicts": []
+    },
+    {
+        "id": 3,
+        "name": "Allure",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Twoje ataki przyciągają potwory do Ciebie.",
+        "conflicts": []
+    },
+    {
+        "id": 4,
+        "name": "Ambit",
+        "rarity": "Ultimate",
+        "maxLevel": 7,
+        "items": ["Sword", "Axe"],
+        "description": "Zadaje obrażenia mobom w promieniu, który zwiększa się wraz z poziomem enchantu.",
+        "conflicts": []
+    },
+    {
+        "id": 5,
+        "name": "Angelic",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Przywraca zdrowie po otrzymaniu obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 6,
+        "name": "Auto Reel",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Fishing Rod"],
+        "description": "Automatycznie zwija wędkę po złapaniu ryby.",
+        "conflicts": []
+    },
+    {
+        "id": 7,
+        "name": "Aqua",
+        "rarity": "Legendary",
+        "maxLevel": 4,
+        "items": ["Boots"],
+        "description": "Zadajesz podwójne obrażenia podczas przebywania w wodzie.",
+        "conflicts": []
+    },
+    {
+        "id": 8,
+        "name": "Aquatic",
+        "rarity": "Simple",
+        "maxLevel": 1,
+        "items": ["Helmet"],
+        "description": "Pozwala oddychać pod wodą.",
+        "conflicts": []
+    },
+    {
+        "id": 9,
+        "name": "Archer",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Bow"],
+        "description": "Zwiększa obrażenia zadawane z łuku.",
+        "conflicts": []
+    },
+    {
+        "id": 10,
+        "name": "Armored",
+        "rarity": "Legendary",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Zmniejsza obrażenia od mieczy przeciwników o 2% za każdy poziom enchantu.",
+        "conflicts": []
+    },
+    {
+        "id": 11,
+        "name": "Arrow Break",
+        "rarity": "Ultimate",
+        "maxLevel": 6,
+        "items": ["Axe"],
+        "description": "Szansa na odbicie strzał podczas trzymania przedmiotu z tym enchantem.",
+        "conflicts": []
+    },
+    {
+        "id": 12,
+        "name": "Arrow Deflect",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na całkowite zablokowanie obrażeń od strzał przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 13,
+        "name": "Axe of Spirits",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Axe"],
+        "description": "Szansa na zdobycie większej liczby dusz za zabijanie graczy.",
+        "conflicts": []
+    },
+    {
+        "id": 14,
+        "name": "Bait",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Fishing Rod"],
+        "description": "Szansa na otrzymanie podwójnych łupów z łowienia.",
+        "conflicts": []
+    },
+    {
+        "id": 15,
+        "name": "Barbarian",
+        "rarity": "Legendary",
+        "maxLevel": 4,
+        "items": ["Axe"],
+        "description": "Szansa na zadanie większych obrażeń siekierą.",
+        "conflicts": []
+    },
+    {
+        "id": 16,
+        "name": "Beastslayer",
+        "rarity": "Legendary",
+        "maxLevel": 4,
+        "items": ["Sword", "Axe"],
+        "description": "Zwiększa obrażenia zadawane wrogim mobom.",
+        "conflicts": []
+    },
+    {
+        "id": 17,
+        "name": "Berserk",
+        "rarity": "Unique",
+        "maxLevel": 5,
+        "items": ["Sword", "Axe"],
+        "description": "Szansa na otrzymanie efektów Siły oraz Zmęczenia podczas wydobywania.",
+        "conflicts": []
+    },
+    {
+        "id": 18,
+        "name": "Blacksmith",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Axe"],
+        "description": "Naprawia broń kosztem zadawania mniejszych obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 19,
+        "name": "Bleed",
+        "rarity": "Ultimate",
+        "maxLevel": 6,
+        "items": ["Axe"],
+        "description": "Powoduje krwawienie u przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 20,
+        "name": "Blind",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na nałożenie efektu Ślepoty podczas ataku.",
+        "conflicts": []
+    },
+        {
+        "id": 21,
+        "name": "Block",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na zablokowanie ataku i zadanie przeciwnikowi do 4 punktów obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 22,
+        "name": "Blunt Force",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Axe"],
+        "description": "Szansa na zadanie potężnego ciosu.",
+        "conflicts": []
+    },
+    {
+        "id": 23,
+        "name": "Bone Crusher",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Sword", "Axe"],
+        "description": "Zwiększa obrażenia zadawane Szkieletom.",
+        "conflicts": []
+    },
+    {
+        "id": 24,
+        "name": "Bowmaster",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Bow", "Crossbow", "Trident"],
+        "description": "Zwiększa obrażenia zadawane graczom trzymającym miecz.",
+        "conflicts": []
+    },
+    {
+        "id": 25,
+        "name": "Carrot Planter",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Hoe"],
+        "description": "Sadzi marchewki na obszarze 3x3 po użyciu Shift + PPM.",
+        "conflicts": []
+    },
+    {
+        "id": 26,
+        "name": "Chaos",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Trident"],
+        "description": "Nakłada na przeciwnika efekty Osłabienia i Withera.",
+        "conflicts": []
+    },
+    {
+        "id": 27,
+        "name": "Chunky",
+        "rarity": "Legendary",
+        "maxLevel": 6,
+        "items": ["Chestplate"],
+        "description": "Szansa na otrzymywanie mniejszych obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 28,
+        "name": "Cleave",
+        "rarity": "Ultimate",
+        "maxLevel": 7,
+        "items": ["Axe"],
+        "description": "Zadaje obrażenia graczom w promieniu, który zwiększa się wraz z poziomem enchantu.",
+        "conflicts": []
+    },
+    {
+        "id": 29,
+        "name": "Confuse",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Sword"],
+        "description": "Szansa na nałożenie efektu Nudności.",
+        "conflicts": []
+    },
+    {
+        "id": 30,
+        "name": "Convulse",
+        "rarity": "Legendary",
+        "maxLevel": 6,
+        "items": ["Boots"],
+        "description": "Szansa na wyrzucenie atakującego wysoko w powietrze.",
+        "conflicts": []
+    },
+    {
+        "id": 31,
+        "name": "Creeper Armor",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Szansa na odporność na obrażenia od eksplozji, a na wyższych poziomach również na odzyskanie zdrowia.",
+        "conflicts": []
+    },
+    {
+        "id": 32,
+        "name": "Critical",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Zwiększa obrażenia zadawane trafieniami krytycznymi.",
+        "conflicts": []
+    },
+    {
+        "id": 33,
+        "name": "Curse",
+        "rarity": "Elite",
+        "maxLevel": 2,
+        "items": ["Armor"],
+        "description": "Szansa na nałożenie przeciwnikowi efektu Zmęczenia.",
+        "conflicts": []
+    },
+    {
+        "id": 34,
+        "name": "Deadshot",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Trident"],
+        "description": "Trafienia w głowę trójzębem zadają podwójne obrażenia.",
+        "conflicts": []
+    },
+    {
+        "id": 35,
+        "name": "Death Punch",
+        "rarity": "Simple",
+        "maxLevel": 5,
+        "items": ["Sword", "Axe"],
+        "description": "Zwiększa obrażenia zadawane Zombie.",
+        "conflicts": []
+    },
+    {
+        "id": 36,
+        "name": "Decapitation",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Sword", "Axe"],
+        "description": "Szansa na wypadnięcie głowy przeciwnika po jego śmierci.",
+        "conflicts": []
+    },
+    {
+        "id": 37,
+        "name": "Deranged",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Przywołuje pioruny uderzające w pobliskich graczy.",
+        "conflicts": []
+    },
+    {
+        "id": 38,
+        "name": "Devour",
+        "rarity": "Unique",
+        "maxLevel": 3,
+        "items": ["Weapon"],
+        "description": "Szansa na odzyskanie punktów głodu podczas zabijania mobów.",
+        "conflicts": []
+    },
+    {
+        "id": 39,
+        "name": "Diminish",
+        "rarity": "Ultimate",
+        "maxLevel": 1,
+        "items": ["Axe"],
+        "description": "Szansa na nałożenie przeciwnikowi efektu Zmęczenia.",
+        "conflicts": []
+    },
+    {
+        "id": 40,
+        "name": "Diploid",
+        "rarity": "Fabled",
+        "maxLevel": 5,
+        "items": ["Sword"],
+        "description": "Szansa na zwielokrotnienie łupów z mobów. Aktywacja kosztuje 5 dusz.",
+        "conflicts": []
+    },
+        {
+        "id": 41,
+        "name": "Disappear",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na stanie się niewidzialnym przy niskim poziomie zdrowia.",
+        "conflicts": []
+    },
+    {
+        "id": 42,
+        "name": "Disarm",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na rozbrojenie przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 43,
+        "name": "Disarmor",
+        "rarity": "Legendary",
+        "maxLevel": 8,
+        "items": ["Sword"],
+        "description": "Szansa na zdjęcie losowego elementu zbroi przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 44,
+        "name": "Disintegrate",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Sword"],
+        "description": "Szansa na dodatkowe uszkodzenie trwałości całej zbroi przeciwnika przy każdym trafieniu.",
+        "conflicts": []
+    },
+    {
+        "id": 45,
+        "name": "Distance",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Weapon"],
+        "description": "Szansa na oddalenie się od przeciwników i otrzymanie Regeneracji.",
+        "conflicts": []
+    },
+    {
+        "id": 46,
+        "name": "Divert",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Szansa na zatrucie przeciwnika oraz otrzymanie Regeneracji.",
+        "conflicts": []
+    },
+    {
+        "id": 47,
+        "name": "Dodge",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Szansa na uniknięcie fizycznego ataku. Szansa wzrasta podczas skradania.",
+        "conflicts": []
+    },
+    {
+        "id": 48,
+        "name": "Double Strike",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na wykonanie podwójnego uderzenia.",
+        "conflicts": []
+    },
+    {
+        "id": 49,
+        "name": "Ender Slayer",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Weapon"],
+        "description": "Zwiększa obrażenia zadawane Endermanom i Smokom Endu.",
+        "conflicts": []
+    },
+    {
+        "id": 50,
+        "name": "Endmaster",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Zadaje podwójne obrażenia mobom w Endzie.",
+        "conflicts": []
+    },
+    {
+        "id": 51,
+        "name": "Epicness",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Wyświetla efekt cząsteczek podczas ataku.",
+        "conflicts": []
+    },
+    {
+        "id": 52,
+        "name": "Exalted",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Sword"],
+        "description": "Szansa na usunięcie negatywnych efektów mikstur.",
+        "conflicts": []
+    },
+    {
+        "id": 53,
+        "name": "Experience",
+        "rarity": "Simple",
+        "maxLevel": 5,
+        "items": ["Tool"],
+        "description": "Szansa na zdobycie większej ilości doświadczenia z rud.",
+        "conflicts": []
+    },
+    {
+        "id": 54,
+        "name": "Explosive",
+        "rarity": "Unique",
+        "maxLevel": 5,
+        "items": ["Bow"],
+        "description": "Szansa na wybuchające strzały.",
+        "conflicts": []
+    },
+    {
+        "id": 55,
+        "name": "Explosive Demise",
+        "rarity": "Unique",
+        "maxLevel": 8,
+        "items": ["Leggings"],
+        "description": "Przywołuje Creepery jako strażników, gdy jesteś bliski śmierci.",
+        "conflicts": []
+    },
+    {
+        "id": 56,
+        "name": "Extinguish",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Leggings"],
+        "description": "Szansa na ugaszenie siebie podczas płonięcia.",
+        "conflicts": []
+    },
+    {
+        "id": 57,
+        "name": "Famine",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Weapon"],
+        "description": "Szansa na nałożenie efektu Głodu na przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 58,
+        "name": "Featherweight",
+        "rarity": "Unique",
+        "maxLevel": 3,
+        "items": ["Sword", "Axe"],
+        "description": "Szansa na krótkotrwałe otrzymanie efektu Haste.",
+        "conflicts": []
+    },
+    {
+        "id": 59,
+        "name": "Forcefield",
+        "rarity": "Simple",
+        "maxLevel": 5,
+        "items": ["Sword"],
+        "description": "Szansa na odepchnięcie przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 60,
+        "name": "Frenzy",
+        "rarity": "Unique",
+        "maxLevel": 5,
+        "items": ["Crossbow"],
+        "description": "Szansa na wybuchające bełty z kuszy.",
+        "conflicts": []
+    },
+        {
+        "id": 61,
+        "name": "Frozen",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Szansa na nałożenie Spowolnienia na atakującego podczas obrony.",
+        "conflicts": []
+    },
+    {
+        "id": 62,
+        "name": "Fire Hook",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Fishing Rod"],
+        "description": "Haczyk wędki zostaje podpalony.",
+        "conflicts": []
+    },
+    {
+        "id": 63,
+        "name": "Fuddle",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Miesza układ przedmiotów na pasku szybkiego dostępu przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 64,
+        "name": "Fumble",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Chestplate"],
+        "description": "Szansa na wysadzenie przeciwnika jego własną strzałą.",
+        "conflicts": []
+    },
+    {
+        "id": 65,
+        "name": "Gears",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Boots"],
+        "description": "Zapewnia dodatkową szybkość podczas noszenia.",
+        "conflicts": []
+    },
+    {
+        "id": 66,
+        "name": "Glowing",
+        "rarity": "Simple",
+        "maxLevel": 1,
+        "items": ["Helmet"],
+        "description": "Zapewnia stały efekt Noktowizji.",
+        "conflicts": []
+    },
+    {
+        "id": 67,
+        "name": "Greatsword",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Sword"],
+        "description": "Zwiększa obrażenia zadawane graczom trzymającym łuk.",
+        "conflicts": []
+    },
+    {
+        "id": 68,
+        "name": "Guardians",
+        "rarity": "Ultimate",
+        "maxLevel": 10,
+        "items": ["Armor"],
+        "description": "Szansa na przywołanie Żelaznych Golemów, które będą Cię chronić.",
+        "conflicts": []
+    },
+    {
+        "id": 69,
+        "name": "Hardened",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Szansa na odzyskanie trwałości zbroi po otrzymaniu obrażeń od graczy.",
+        "conflicts": []
+    },
+    {
+        "id": 70,
+        "name": "Haste",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Tool"],
+        "description": "Pozwala używać narzędzi szybciej.",
+        "conflicts": []
+    },
+    {
+        "id": 71,
+        "name": "Hasten",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Tool"],
+        "description": "Szansa na otrzymanie efektu Haste po zniszczeniu bloku.",
+        "conflicts": []
+    },
+    {
+        "id": 72,
+        "name": "Heavy",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Zmniejsza obrażenia od łuków przeciwników o 2% za każdy poziom.",
+        "conflicts": []
+    },
+    {
+        "id": 73,
+        "name": "Hellfire",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Bow"],
+        "description": "Strzały zamieniają się w kule ognia.",
+        "conflicts": []
+    },
+    {
+        "id": 74,
+        "name": "Hook",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Fishing Rod"],
+        "description": "Zwiększa ilość zdobywanego doświadczenia podczas łowienia.",
+        "conflicts": []
+    },
+    {
+        "id": 75,
+        "name": "Hook",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Fishing Rod"],
+        "description": "Szansa na zwiększenie szczęścia podczas łowienia.",
+        "conflicts": []
+    },
+    {
+        "id": 76,
+        "name": "Hunter",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Bow", "Crossbow", "Trident"],
+        "description": "Zwiększa obrażenia zadawane pasywnym mobom.",
+        "conflicts": []
+    },
+    {
+        "id": 77,
+        "name": "Ice Aspect",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na nałożenie efektu Spowolnienia na przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 78,
+        "name": "Immolate",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword", "Axe"],
+        "description": "Zwiększa obrażenia zadawane Pająkom.",
+        "conflicts": []
+    },
+    {
+        "id": 79,
+        "name": "Immolation",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Podpala wszystkie moby znajdujące się w pobliżu.",
+        "conflicts": []
+    },
+    {
+        "id": 80,
+        "name": "Immortal",
+        "rarity": "Fabled",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na ochronę zbroi przed utratą trwałości.",
+        "conflicts": []
+    },
+        {
+        "id": 81,
+        "name": "Impact",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Trident"],
+        "description": "Szansa na zadanie podwójnych obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 82,
+        "name": "Implants",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Helmet"],
+        "description": "Co kilka sekund daje szansę na odzyskanie punktów głodu.",
+        "conflicts": []
+    },
+    {
+        "id": 83,
+        "name": "Infernal",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword", "Axe"],
+        "description": "Wywołuje wybuchowy efekt ognia podczas ataku.",
+        "conflicts": []
+    },
+    {
+        "id": 84,
+        "name": "Inflame",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Axe"],
+        "description": "Podpala wszystkich graczy znajdujących się w pobliżu.",
+        "conflicts": []
+    },
+    {
+        "id": 85,
+        "name": "Inquisitive",
+        "rarity": "Legendary",
+        "maxLevel": 4,
+        "items": ["Sword"],
+        "description": "Szansa na zwiększenie ilości doświadczenia zdobywanego z mobów.",
+        "conflicts": []
+    },
+    {
+        "id": 86,
+        "name": "Interrupt",
+        "rarity": "Ultimate",
+        "maxLevel": 2,
+        "items": ["Sword"],
+        "description": "Szansa na nałożenie przeciwnikowi efektu Zmęczenia.",
+        "conflicts": []
+    },
+    {
+        "id": 87,
+        "name": "Jelly Legs",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Boots"],
+        "description": "Szansa na całkowite zniwelowanie obrażeń od upadku.",
+        "conflicts": []
+    },
+    {
+        "id": 88,
+        "name": "Judgement",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Elytra"],
+        "description": "Szansa na zatrucie przeciwnika oraz otrzymanie Regeneracji.",
+        "conflicts": []
+    },
+    {
+        "id": 89,
+        "name": "Kill Aura",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Sword"],
+        "description": "Szansa na jednoczesne zabicie wielu potworów znajdujących się w pobliżu.",
+        "conflicts": []
+    },
+    {
+        "id": 90,
+        "name": "Launch",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Pozwala wystrzelić siebie w powietrze po kliknięciu prawym przyciskiem myszy.",
+        "conflicts": []
+    },
+    {
+        "id": 91,
+        "name": "Lava Walker",
+        "rarity": "Legendary",
+        "maxLevel": 1,
+        "items": ["Boots"],
+        "description": "Pozwala chodzić po lawie.",
+        "conflicts": []
+    },
+    {
+        "id": 92,
+        "name": "Lifesteal",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Sword"],
+        "description": "Szansa na kradzież zdrowia podczas ataku.",
+        "conflicts": []
+    },
+    {
+        "id": 93,
+        "name": "Longbow",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Bow"],
+        "description": "Znacznie zwiększa obrażenia zadawane graczom trzymającym łuk.",
+        "conflicts": []
+    },
+    {
+        "id": 94,
+        "name": "Lucid",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Szansa na usunięcie efektu Ślepoty i otrzymanie Noktowizji po otrzymaniu obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 95,
+        "name": "Magnet",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Twoje ataki przyciągają graczy do Ciebie.",
+        "conflicts": []
+    },
+    {
+        "id": 96,
+        "name": "Marksman",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Crossbow"],
+        "description": "Zwiększa obrażenia zadawane z kuszy.",
+        "conflicts": []
+    },
+    {
+        "id": 97,
+        "name": "Missile",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Crossbow"],
+        "description": "Bełty zamieniają się w kule ognia.",
+        "conflicts": []
+    },
+    {
+        "id": 98,
+        "name": "Molten",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na podpalenie atakującego.",
+        "conflicts": []
+    },
+    {
+        "id": 99,
+        "name": "Momentum",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Elytra"],
+        "description": "Szansa na otrzymanie przyspieszenia podczas używania fajerwerków z Elytrą.",
+        "conflicts": []
+    },
+    {
+        "id": 100,
+        "name": "Multiplication",
+        "rarity": "Fabled",
+        "maxLevel": 5,
+        "items": ["Pickaxe"],
+        "description": "Szansa na zwielokrotnienie łupów z rud. Aktywacja kosztuje 5 dusz.",
+        "conflicts": []
+    },
+        {
+        "id": 101,
+        "name": "Nether Slayer",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Weapon"],
+        "description": "Zwiększa obrażenia zadawane mobom w Netherze.",
+        "conflicts": []
+    },
+    {
+        "id": 102,
+        "name": "Netherling",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Zadajesz podwójne obrażenia mobom w Netherze.",
+        "conflicts": []
+    },
+    {
+        "id": 103,
+        "name": "Neutralize",
+        "rarity": "Fabled",
+        "maxLevel": 2,
+        "items": ["Bow", "Crossbow"],
+        "description": "Szansa na rozbrojenie przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 104,
+        "name": "Night Owl",
+        "rarity": "Ultimate",
+        "maxLevel": 1,
+        "items": ["Sword"],
+        "description": "Zadajesz większe obrażenia mobom w nocy.",
+        "conflicts": []
+    },
+    {
+        "id": 105,
+        "name": "Nightwalker",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Zamraża moby w nocy.",
+        "conflicts": []
+    },
+    {
+        "id": 106,
+        "name": "Nulify",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Leggings"],
+        "description": "Szansa na odbicie ataku i zwielokrotnienie obrażeń. Aktywacja kosztuje 40 dusz.",
+        "conflicts": []
+    },
+    {
+        "id": 107,
+        "name": "Obsidianshield",
+        "rarity": "Ultimate",
+        "maxLevel": 1,
+        "items": ["Armor"],
+        "description": "Zapewnia stałą odporność na ogień.",
+        "conflicts": []
+    },
+    {
+        "id": 108,
+        "name": "Overload",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Odblokowuje dodatkowe serca zdrowia.",
+        "conflicts": []
+    },
+    {
+        "id": 109,
+        "name": "Paralyze",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Sword", "Axe"],
+        "description": "Wywołuje efekt pioruna oraz daje szansę na Spowolnienie i Wolniejsze Kopanie.",
+        "conflicts": []
+    },
+    {
+        "id": 110,
+        "name": "Patch",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Szansa na odzyskanie trwałości zbroi po obrażeniach od mobów.",
+        "conflicts": []
+    },
+    {
+        "id": 111,
+        "name": "Perish",
+        "rarity": "Unique",
+        "maxLevel": 5,
+        "items": ["Bow", "Crossbow", "Trident"],
+        "description": "Szansa na nałożenie efektu Withera.",
+        "conflicts": []
+    },
+    {
+        "id": 112,
+        "name": "Permafrost",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Sword"],
+        "description": "Szansa na spowolnienie i wywołanie krwawienia u przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 113,
+        "name": "Phoenix",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Chestplate"],
+        "description": "Szansa na odrodzenie się po śmierci.",
+        "conflicts": []
+    },
+    {
+        "id": 114,
+        "name": "Piercing",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Bow"],
+        "description": "Zwiększa zadawane obrażenia.",
+        "conflicts": []
+    },
+    {
+        "id": 115,
+        "name": "Planter",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Hoe"],
+        "description": "Sadzi nasiona na obszarze 3x3 po użyciu Shift + PPM.",
+        "conflicts": []
+    },
+    {
+        "id": 116,
+        "name": "Plummet",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Boots"],
+        "description": "Zadaje obrażenia pobliskim mobom po otrzymaniu obrażeń od upadku.",
+        "conflicts": []
+    },
+    {
+        "id": 117,
+        "name": "Poison",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword", "Axe"],
+        "description": "Szansa na nałożenie efektu Trucizny.",
+        "conflicts": []
+    },
+    {
+        "id": 118,
+        "name": "Poisoned Hook",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Fishing Rod"],
+        "description": "Haczyk wędki zatruwa trafiony cel.",
+        "conflicts": []
+    },
+    {
+        "id": 119,
+        "name": "Poisoned",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na zatrucie atakującego.",
+        "conflicts": []
+    },
+    {
+        "id": 120,
+        "name": "Poseidon",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Trident"],
+        "description": "Zwiększa obrażenia zadawane trójzębem.",
+        "conflicts": []
+    },
+        {
+        "id": 121,
+        "name": "Potato Planter",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Hoe"],
+        "description": "Sadzi ziemniaki na obszarze 3x3 po użyciu Shift + PPM.",
+        "conflicts": []
+    },
+    {
+        "id": 122,
+        "name": "Ragdoll",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na odrzucenie po otrzymaniu obrażeń.",
+        "conflicts": []
+    },
+    {
+        "id": 123,
+        "name": "Ravenous",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Sword", "Axe"],
+        "description": "Szansa na odzyskanie punktów głodu podczas walki.",
+        "conflicts": []
+    },
+    {
+        "id": 124,
+        "name": "Reaper",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Axe"],
+        "description": "Szansa na nałożenie efektów Withera i Ślepoty podczas ataku.",
+        "conflicts": []
+    },
+    {
+        "id": 125,
+        "name": "Rebound",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Weapon"],
+        "description": "Przywraca część zdrowia po zabiciu przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 126,
+        "name": "Rebreather",
+        "rarity": "Simple",
+        "maxLevel": 2,
+        "items": ["Pickaxe"],
+        "description": "Szansa na odzyskanie powietrza podczas kopania pod wodą.",
+        "conflicts": []
+    },
+    {
+        "id": 127,
+        "name": "Reflect",
+        "rarity": "Unique",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Pochłania część obrażeń przeciwnika i odbija je z powrotem.",
+        "conflicts": []
+    },
+    {
+        "id": 128,
+        "name": "Reforged",
+        "rarity": "Elite",
+        "maxLevel": 10,
+        "items": ["Weapon", "Tool"],
+        "description": "Chroni broń i narzędzia przed utratą trwałości, dzięki czemu zużywają się wolniej.",
+        "conflicts": []
+    },
+    {
+        "id": 129,
+        "name": "Reinforced",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Elytra"],
+        "description": "Zmniejsza otrzymywane obrażenia.",
+        "conflicts": []
+    },
+    {
+        "id": 130,
+        "name": "Replanter",
+        "rarity": "Unique",
+        "maxLevel": 1,
+        "items": ["Hoe"],
+        "description": "Automatycznie sadzi ponownie zebrane uprawy.",
+        "conflicts": []
+    },
+    {
+        "id": 131,
+        "name": "Replenish",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Pickaxe"],
+        "description": "Szansa na odzyskanie punktów głodu podczas kopania.",
+        "conflicts": []
+    },
+    {
+        "id": 132,
+        "name": "Restore",
+        "rarity": "Fabled",
+        "maxLevel": 4,
+        "items": ["Tool"],
+        "description": "Po zniszczeniu przedmiot ma szansę utracić ten enchant i odzyskać połowę swojej trwałości.",
+        "conflicts": []
+    },
+    {
+        "id": 133,
+        "name": "Rocket Escape",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Boots"],
+        "description": "Wystrzeliwuje Cię wysoko w powietrze przy niskim poziomie zdrowia.",
+        "conflicts": []
+    },
+    {
+        "id": 134,
+        "name": "Rush",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Elytra"],
+        "description": "Szansa na otrzymanie przyspieszenia podczas startu Elytrą. Aktywacja kosztuje 10 dusz.",
+        "conflicts": []
+    },
+    {
+        "id": 135,
+        "name": "Safeguard",
+        "rarity": "Ultimate",
+        "maxLevel": 2,
+        "items": ["Armor"],
+        "description": "Szansa na otrzymanie efektu Odporności podczas obrony.",
+        "conflicts": []
+    },
+    {
+        "id": 136,
+        "name": "Scare",
+        "rarity": "Fabled",
+        "maxLevel": 5,
+        "items": ["Weapon"],
+        "description": "Szansa na zamianę hełmu przeciwnika w dynię na krótki czas.",
+        "conflicts": []
+    },
+    {
+        "id": 137,
+        "name": "Shatter",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Axe"],
+        "description": "Szansa na dodatkowe uszkodzenie trwałości całej zbroi przeciwnika przy każdym trafieniu.",
+        "conflicts": []
+    },
+    {
+        "id": 138,
+        "name": "Sharpness Hook",
+        "rarity": "Ultimate",
+        "maxLevel": 1,
+        "items": ["Fishing Rod"],
+        "description": "Haczyk wędki zadaje obrażenia trafionemu celowi.",
+        "conflicts": []
+    },
+    {
+        "id": 139,
+        "name": "Shockwave",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Chestplate"],
+        "description": "Szansa na odepchnięcie atakującego przy niskim poziomie zdrowia.",
+        "conflicts": []
+    },
+    {
+        "id": 140,
+        "name": "Slayer",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Sword", "Axe"],
+        "description": "Zwiększa obrażenia zadawane pasywnym mobom.",
+        "conflicts": []
+    },
+        {
+        "id": 141,
+        "name": "Slingshot",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Elytra"],
+        "description": "Wystrzeliwuje Cię w powietrze po kliknięciu prawym przyciskiem myszy.",
+        "conflicts": []
+    },
+    {
+        "id": 142,
+        "name": "Smelting",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Pickaxe"],
+        "description": "Szansa na automatyczne przetopienie wykopanych bloków.",
+        "conflicts": []
+    },
+    {
+        "id": 143,
+        "name": "Smoke Bomb",
+        "rarity": "Elite",
+        "maxLevel": 8,
+        "items": ["Helmet"],
+        "description": "Gdy jesteś bliski śmierci, tworzysz zasłonę dymną dezorientującą przeciwników.",
+        "conflicts": []
+    },
+    {
+        "id": 144,
+        "name": "Snap",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Fishing Rod"],
+        "description": "Przyciąga trafiony cel do Ciebie.",
+        "conflicts": []
+    },
+    {
+        "id": 145,
+        "name": "Snare",
+        "rarity": "Elite",
+        "maxLevel": 4,
+        "items": ["Bow"],
+        "description": "Szansa na spowolnienie i zmęczenie przeciwnika trafionego pociskiem.",
+        "conflicts": []
+    },
+    {
+        "id": 146,
+        "name": "Sniper",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Bow"],
+        "description": "Trafienia w głowę z łuku zadają podwójne obrażenia.",
+        "conflicts": []
+    },
+    {
+        "id": 147,
+        "name": "Soulbound",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Weapon", "Tool", "Bow"],
+        "description": "Szansa na zachowanie przedmiotu po śmierci.",
+        "conflicts": []
+    },
+    {
+        "id": 148,
+        "name": "Soulgrind",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na zdobycie dusz za zabijanie mobów.",
+        "conflicts": []
+    },
+    {
+        "id": 149,
+        "name": "Soulless",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Bow", "Crossbow", "Trident"],
+        "description": "Zwiększa obrażenia zadawane wrogim mobom.",
+        "conflicts": []
+    },
+    {
+        "id": 150,
+        "name": "Soulminer",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Pickaxe"],
+        "description": "Szansa na zdobycie dusz podczas wydobywania.",
+        "conflicts": []
+    },
+    {
+        "id": 151,
+        "name": "Spark",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Trident"],
+        "description": "Podpala przeciwników.",
+        "conflicts": []
+    },
+    {
+        "id": 152,
+        "name": "Spiritmaster",
+        "rarity": "Fabled",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na zdobycie większej liczby dusz za zabijanie graczy.",
+        "conflicts": []
+    },
+    {
+        "id": 153,
+        "name": "Spirits",
+        "rarity": "Ultimate",
+        "maxLevel": 10,
+        "items": ["Armor"],
+        "description": "Szansa na przywołanie Blaze'ów jako strażników.",
+        "conflicts": []
+    },
+    {
+        "id": 154,
+        "name": "Springs",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Boots"],
+        "description": "Zapewnia efekt zwiększonego skoku.",
+        "conflicts": []
+    },
+    {
+        "id": 155,
+        "name": "Strife",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Trident"],
+        "description": "Zwiększa obrażenia zadawane trójzębem w walce wręcz.",
+        "conflicts": []
+    },
+    {
+        "id": 156,
+        "name": "Strike",
+        "rarity": "Simple",
+        "maxLevel": 3,
+        "items": ["Sword", "Bow", "Crossbow", "Trident"],
+        "description": "Szansa na uderzenie przeciwnika piorunem.",
+        "conflicts": []
+    },
+    {
+        "id": 157,
+        "name": "Striker",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Bow"],
+        "description": "Przywołuje deszcz strzał nad przeciwnikiem.",
+        "conflicts": []
+    },
+    {
+        "id": 158,
+        "name": "Suspend",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na usunięcie odrzutu zadawanego mobom.",
+        "conflicts": []
+    },
+    {
+        "id": 159,
+        "name": "Swordsman",
+        "rarity": "Ultimate",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Zmniejsza obrażenia otrzymywane podczas trzymania miecza, nawet o 22% na maksymalnym poziomie.",
+        "conflicts": []
+    },
+    {
+        "id": 160,
+        "name": "Tank",
+        "rarity": "Ultimate",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Zmniejsza obrażenia od siekier przeciwników o 2% za każdy poziom.",
+        "conflicts": []
+    },
+        {
+        "id": 161,
+        "name": "Telepathy",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Tool"],
+        "description": "Automatycznie przenosi wykopane bloki do Twojego ekwipunku.",
+        "conflicts": []
+    },
+    {
+        "id": 162,
+        "name": "Thunderlord",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Weapon"],
+        "description": "Co trzecie trafienie przywołuje piorun uderzający w potwora.",
+        "conflicts": []
+    },
+    {
+        "id": 163,
+        "name": "Timber",
+        "rarity": "Ultimate",
+        "maxLevel": 3,
+        "items": ["Axe"],
+        "description": "Szansa na ścięcie całego drzewa jednym uderzeniem.",
+        "conflicts": []
+    },
+    {
+        "id": 164,
+        "name": "Trench",
+        "rarity": "Ultimate",
+        "maxLevel": 9,
+        "items": ["Pickaxe", "Shovel"],
+        "description": "Szansa na wykopanie obszaru 3x3.",
+        "conflicts": []
+    },
+    {
+        "id": 165,
+        "name": "Trickster",
+        "rarity": "Elite",
+        "maxLevel": 8,
+        "items": ["Armor"],
+        "description": "Po otrzymaniu obrażeń masz szansę teleportować się za plecy przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 166,
+        "name": "Turmoil",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Armor"],
+        "description": "Szansa na uniemożliwienie przywołania strażników przez przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 167,
+        "name": "Twinge",
+        "rarity": "Legendary",
+        "maxLevel": 4,
+        "items": ["Trident"],
+        "description": "Powoduje krwawienie przeciwnika po trafieniu w walce wręcz.",
+        "conflicts": []
+    },
+    {
+        "id": 168,
+        "name": "Unbreakable",
+        "rarity": "Fabled",
+        "maxLevel": 1,
+        "items": ["Tool"],
+        "description": "Narzędzia z tym enchantem stają się niezniszczalne.",
+        "conflicts": []
+    },
+    {
+        "id": 169,
+        "name": "Undead Ruse",
+        "rarity": "Elite",
+        "maxLevel": 10,
+        "items": ["Boots"],
+        "description": "Po otrzymaniu obrażeń masz szansę przywołać hordę zombie, aby zmylić przeciwników.",
+        "conflicts": []
+    },
+    {
+        "id": 170,
+        "name": "Unholy",
+        "rarity": "Legendary",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Podczas obrony nakłada na przeciwnika efekty Osłabienia i Withera.",
+        "conflicts": []
+    },
+    {
+        "id": 171,
+        "name": "Vampire",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Sword"],
+        "description": "Szansa na odzyskanie do 3 punktów zdrowia kilka sekund po trafieniu przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 172,
+        "name": "Vein Miner",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Pickaxe"],
+        "description": "Pozwala wykopać całą żyłę rudy jednocześnie.",
+        "conflicts": []
+    },
+    {
+        "id": 173,
+        "name": "Virus",
+        "rarity": "Unique",
+        "maxLevel": 3,
+        "items": ["Bow", "Crossbow", "Trident"],
+        "description": "Szansa na nałożenie efektu Trucizny.",
+        "conflicts": []
+    },
+    {
+        "id": 174,
+        "name": "Voodoo",
+        "rarity": "Elite",
+        "maxLevel": 6,
+        "items": ["Armor"],
+        "description": "Szansa na nałożenie efektu Osłabienia na przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 175,
+        "name": "Ward",
+        "rarity": "Unique",
+        "maxLevel": 4,
+        "items": ["Armor"],
+        "description": "Szansa na pochłonięcie części obrażeń przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 176,
+        "name": "Water Walker",
+        "rarity": "Legendary",
+        "maxLevel": 1,
+        "items": ["Boots"],
+        "description": "Pozwala chodzić po wodzie.",
+        "conflicts": []
+    },
+    {
+        "id": 177,
+        "name": "Wings",
+        "rarity": "Legendary",
+        "maxLevel": 1,
+        "items": ["Boots"],
+        "description": "Pozwala latać podczas noszenia.",
+        "conflicts": []
+    },
+    {
+        "id": 178,
+        "name": "Wither",
+        "rarity": "Elite",
+        "maxLevel": 5,
+        "items": ["Armor"],
+        "description": "Szansa na nałożenie efektu Withera na przeciwnika.",
+        "conflicts": []
+    },
+    {
+        "id": 179,
+        "name": "Auto Smelt",
+        "rarity": "Simple",
+        "maxLevel": 1,
+        "items": ["Tool"],
+        "description": "Automatycznie przetapia wydobyte surowce, jeśli jest to możliwe.",
+        "conflicts": []
+    },
+    {
+        "id": 180,
+        "name": "Harvest",
+        "rarity": "Elite",
+        "maxLevel": 3,
+        "items": ["Hoe"],
+        "description": "Zwiększa ilość plonów otrzymywanych podczas zbiorów.",
+        "conflicts": []
+    },
+    {
+        "id": 181,
+        "name": "Lucky Miner",
+        "rarity": "Legendary",
+        "maxLevel": 3,
+        "items": ["Pickaxe"],
+        "description": "Szansa na zdobycie dodatkowych cennych surowców podczas wydobywania.",
+        "conflicts": []
+    }
+]

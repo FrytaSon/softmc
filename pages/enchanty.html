@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Enchanty • SoftMC</title>
+
+    <meta name="description"
+          content="Lista wszystkich dodatkowych enchantów dostępnych na serwerze SoftMC.">
+
+    <link rel="icon"
+          href="../assets/img/favicon.png">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/navbar.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/cards.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/sections.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/footer.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/animations.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/enchant.css">
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav>
+
+    <a href="../index.html"
+       class="logo">
+
+        <img src="../assets/img/logo.png"
+             alt="SoftMC">
+
+    </a>
+
+    <ul>
+
+        <li>
+
+            <a href="../index.html">
+
+                Start
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="active"
+               href="enchanty.html">
+
+                Enchanty
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="../index.html#discord">
+
+                Discord
+
+            </a>
+
+        </li>
+
+    </ul>
+
+    <div class="nav-right">
+
+        <button
+            class="copy-ip"
+            onclick="copyIP()">
+
+            <span>
+
+                📋 softmc.eu
+
+            </span>
+
+        </button>
+
+    </div>
+
+</nav>
+
+<header class="enchant-header">
+
+    <div class="hero-background">
+
+        <img src="../assets/img/enchant-bg.webp"
+             alt="Enchanty">
+
+    </div>
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <h1 class="hero-title">
+
+                Enchanty
+
+            </h1>
+
+            <p class="hero-description">
+
+                Poznaj wszystkie dodatkowe enchanty
+                dostępne na serwerze SoftMC.
+
+            </p>
+
+        </div>
+
+    </section>
+
+</header>
+
+<section class="enchant-search">
+
+    <div class="section-header">
+
+        <span class="section-subtitle">
+
+            BAZA ENCHANTÓW
+
+        </span>
+
+        <h2 class="section-title">
+
+            Wyszukiwarka
+
+        </h2>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+
+            id="search"
+
+            type="text"
+
+            placeholder="Szukaj enchantu..."
+
+        >
+
+    </div>
+
+    <div class="filter-buttons">
+
+        <button class="filter active"
+                data-filter="all">
+
+            Wszystkie
+
+        </button>
+
+        <button class="filter"
+                data-filter="weapon">
+
+            Broń
+
+        </button>
+
+        <button class="filter"
+                data-filter="armor">
+
+            Zbroja
+
+        </button>
+
+        <button class="filter"
+                data-filter="tools">
+
+            Narzędzia
+
+        </button>
+
+        <button class="filter"
+                data-filter="bow">
+
+            Łuki
+
+        </button>
+
+        <button class="filter"
+                data-filter="crossbow">
+
+            Kusze
+
+        </button>
+
+        <button class="filter"
+                data-filter="trident">
+
+            Trójzęby
+
+        </button>
+
+        <button class="filter"
+                data-filter="elytra">
+
+            Elytra
+
+        </button>
+
+        <button class="filter"
+                data-filter="fishing">
+
+            Wędki
+
+        </button>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div
+
+        id="enchants"
+
+        class="enchant-grid">
+
+        <!-- enchant.js -->
+
+    </div>
+
+</section>
+<!-- ===================================================== -->
+<!-- MODAL -->
+<!-- ===================================================== -->
+
+<div id="enchantModal" class="enchant-modal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="closeModal">
+
+            ✕
+
+        </button>
+
+        <div class="modal-header">
+
+            <h2 id="modal-name">
+
+                Enchant
+
+            </h2>
+
+            <span
+                id="modal-rarity"
+                class="modal-rarity">
+
+                Legendary
+
+            </span>
+
+        </div>
+
+        <div class="modal-body">
+
+            <div class="modal-section">
+
+                <h3>
+
+                    Opis
+
+                </h3>
+
+                <p id="modal-description">
+
+                    ...
+
+                </p>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h3>
+
+                    Maksymalny poziom
+
+                </h3>
+
+                <p id="modal-level">
+
+                    I
+
+                </p>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h3>
+
+                    Przedmioty
+
+                </h3>
+
+                <div id="modal-items"
+                     class="modal-tags">
+
+                </div>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h3>
+
+                    Konflikty
+
+                </h3>
+
+                <div id="modal-conflicts"
+                     class="modal-tags">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <img
+            src="../assets/img/logo.png"
+            alt="SoftMC">
+
+        <p>
+
+            SoftMC.eu - Polski serwer Minecraft
+            Survival + Działki oraz SkyBlock.
+
+        </p>
+
+    </div>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>
+
+                Nawigacja
+
+            </h3>
+
+            <a href="../index.html">
+
+                Strona główna
+
+            </a>
+
+            <a href="enchanty.html">
+
+                Enchanty
+
+            </a>
+
+            <a href="../index.html#discord">
+
+                Discord
+
+            </a>
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Serwer
+
+            </h3>
+
+            <p>
+
+                IP:
+
+                <strong>
+
+                    softmc.eu
+
+                </strong>
+
+            </p>
+
+            <p>
+
+                Wersja:
+
+                <strong>
+
+                    1.20 - 1.21.6
+
+                </strong>
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Przydatne
+
+            </h3>
+
+            <a href="../index.html#faq">
+
+                FAQ
+
+            </a>
+
+            <a href="#">
+
+                Regulamin
+
+            </a>
+
+            <a href="#">
+
+                Sklep
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 SoftMC.eu
+
+            Wszelkie prawa zastrzeżone.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ===================================================== -->
+<!-- BACK TO TOP -->
+<!-- ===================================================== -->
+
+<button
+    id="backToTop"
+    class="back-to-top">
+
+    ↑
+
+</button>
+
+<!-- ===================================================== -->
+<!-- LOADER -->
+<!-- ===================================================== -->
+
+<div class="loader">
+
+    <div class="loader-logo">
+
+        <img
+            src="../assets/img/logo.png"
+            alt="SoftMC">
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- SCRIPTS -->
+<!-- ===================================================== -->
+
+<script src="../assets/js/navbar.js"></script>
+
+<script src="../assets/js/particles.js"></script>
+
+<script src="../assets/js/app.js"></script>
+
+<script src="../assets/js/enchant.js"></script>
+
+</body>
+
+</html>

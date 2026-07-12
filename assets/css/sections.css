@@ -1,0 +1,522 @@
+/* ==========================================
+   SoftMC.eu
+   Sections
+========================================== */
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+section{
+
+    position:relative;
+
+    padding:120px 8%;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header{
+
+    max-width:900px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.section-subtitle{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    border-radius:100px;
+
+    background:rgba(69,255,132,.10);
+
+    border:1px solid rgba(69,255,132,.25);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+}
+
+.section-title{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+    line-height:1.15;
+
+}
+
+.section-description{
+
+    color:#bfc8d4;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+   BACKGROUNDS
+========================================== */
+
+#gamemodes{
+
+    background:linear-gradient(
+
+        to bottom,
+
+        transparent,
+
+        rgba(255,255,255,.015)
+
+    );
+
+}
+
+#stats{
+
+    background:rgba(255,255,255,.015);
+
+}
+
+#features{
+
+    background:linear-gradient(
+
+        to bottom,
+
+        rgba(255,255,255,.015),
+
+        transparent
+
+    );
+
+}
+
+#news{
+
+    background:rgba(255,255,255,.015);
+
+}
+
+#gallery{
+
+    background:linear-gradient(
+
+        to bottom,
+
+        transparent,
+
+        rgba(255,255,255,.015)
+
+    );
+
+}
+
+/* ==========================================
+   DIVIDERS
+========================================== */
+
+section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:160px;
+
+    height:1px;
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(69,255,132,.4),
+
+        transparent
+
+    );
+
+}
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq-container{
+
+    max-width:950px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:rgba(20,25,35,.65);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.faq-item:hover{
+
+    border-color:rgba(69,255,132,.30);
+
+}
+
+.faq-question{
+
+    padding:28px 35px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.faq-answer{
+
+    padding:0 35px 30px;
+
+    color:#c8d2dd;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+   DISCORD
+========================================== */
+
+.discord-box{
+
+    max-width:950px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:80px;
+
+    border-radius:30px;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(69,255,132,.12),
+
+            rgba(255,255,255,.03)
+
+        );
+
+    border:1px solid rgba(69,255,132,.25);
+
+    backdrop-filter:blur(20px);
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.discord-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    right:-150px;
+
+    top:-150px;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(69,255,132,.20),
+
+            transparent
+
+        );
+
+    filter:blur(60px);
+
+}
+
+.discord-box h2{
+
+    font-size:48px;
+
+    margin-bottom:25px;
+
+}
+
+.discord-box p{
+
+    color:#d3dbe4;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   GALLERY LIGHT EFFECT
+========================================== */
+
+.gallery-item{
+
+    position:relative;
+
+}
+
+.gallery-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(0,0,0,.35)
+
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================
+   NEWS
+========================================== */
+
+.news-card{
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.news-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.news-text{
+
+    flex:1;
+
+}
+
+/* ==========================================
+   SPACING
+========================================== */
+
+#gamemodes{
+
+    padding-top:140px;
+
+}
+
+#stats{
+
+    padding-top:140px;
+
+}
+
+#features{
+
+    padding-top:140px;
+
+}
+
+#news{
+
+    padding-top:140px;
+
+}
+
+#staff{
+
+    padding-top:140px;
+
+}
+
+#gallery{
+
+    padding-top:140px;
+
+}
+
+#discord{
+
+    padding-top:140px;
+
+}
+
+#faq{
+
+    padding-top:140px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    section{
+
+        padding:100px 40px;
+
+    }
+
+    .section-title{
+
+        font-size:46px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .section-title{
+
+        font-size:34px;
+
+    }
+
+    .section-description{
+
+        font-size:16px;
+
+    }
+
+    .discord-box{
+
+        padding:50px 30px;
+
+    }
+
+    .discord-box h2{
+
+        font-size:34px;
+
+    }
+
+    .faq-question{
+
+        font-size:18px;
+
+        padding:24px;
+
+    }
+
+    .faq-answer{
+
+        padding:0 24px 24px;
+
+    }
+
+}

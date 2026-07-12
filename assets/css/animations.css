@@ -1,0 +1,563 @@
+/* ==========================================
+   SoftMC.eu
+   Animations
+========================================== */
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   FADE LEFT
+========================================== */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    transition:.8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/* ==========================================
+   FADE RIGHT
+========================================== */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    transition:.8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/* ==========================================
+   SCALE
+========================================== */
+
+.scale{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+    transition:.7s ease;
+
+}
+
+.scale.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/* ==========================================
+   FLOAT
+========================================== */
+
+.float{
+
+    animation:floatAnimation 5s ease-in-out infinite;
+
+}
+
+@keyframes floatAnimation{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   HERO GLOW
+========================================== */
+
+.hero-glow{
+
+    animation:glowAnimation 8s ease-in-out infinite;
+
+}
+
+@keyframes glowAnimation{
+
+    0%{
+
+        opacity:.5;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        opacity:.5;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
+.hero-buttons a,
+.hero-buttons button,
+.card-button,
+.copy-ip{
+
+    transition:
+
+        transform .3s ease,
+
+        box-shadow .3s ease,
+
+        filter .3s ease;
+
+}
+
+.hero-buttons a:hover,
+.hero-buttons button:hover,
+.card-button:hover,
+.copy-ip:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+}
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.card{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease,
+
+        border-color .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ==========================================
+   IMAGE ZOOM
+========================================== */
+
+.card-image img,
+.gallery-item img{
+
+    transition:transform .5s ease;
+
+}
+
+.card:hover .card-image img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.1);
+
+}
+
+/* ==========================================
+   PULSE
+========================================== */
+
+.pulse{
+
+    animation:pulseAnimation 2s infinite;
+
+}
+
+@keyframes pulseAnimation{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   ONLINE DOT
+========================================== */
+
+.online-dot{
+
+    animation:onlinePulse 1.8s infinite;
+
+}
+
+@keyframes onlinePulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(69,255,132,.7);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 12px rgba(69,255,132,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(69,255,132,0);
+
+    }
+
+}
+
+/* ==========================================
+   SHINE
+========================================== */
+
+.shine{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shine::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-120%;
+
+    width:40%;
+
+    height:300%;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(255,255,255,.2),
+
+            transparent
+
+        );
+
+    transform:rotate(25deg);
+
+}
+
+.shine:hover::after{
+
+    animation:shineAnimation .9s;
+
+}
+
+@keyframes shineAnimation{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:170%;
+
+    }
+
+}
+
+/* ==========================================
+   BOUNCE
+========================================== */
+
+.bounce{
+
+    animation:bounceAnimation 2s infinite;
+
+}
+
+@keyframes bounceAnimation{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   SPIN
+========================================== */
+
+.spin{
+
+    animation:spinAnimation 20s linear infinite;
+
+}
+
+@keyframes spinAnimation{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+   BLUR IN
+========================================== */
+
+.blur-in{
+
+    opacity:0;
+
+    filter:blur(12px);
+
+    transition:
+
+        opacity .8s ease,
+
+        filter .8s ease;
+
+}
+
+.blur-in.show{
+
+    opacity:1;
+
+    filter:blur(0);
+
+}
+
+/* ==========================================
+   BACK TO TOP
+========================================== */
+
+.back-to-top{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#111;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   LOADER
+========================================== */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#080b11;
+
+    z-index:99999;
+
+    transition:.5s;
+
+}
+
+.loader-logo img{
+
+    width:180px;
+
+    animation:loaderAnimation 2s infinite;
+
+}
+
+@keyframes loaderAnimation{
+
+    0%{
+
+        transform:scale(.9);
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(.9);
+
+        opacity:.5;
+
+    }
+
+}

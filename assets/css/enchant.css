@@ -1,0 +1,1306 @@
+/* ==========================================
+   SoftMC.eu
+   Enchant Wiki
+========================================== */
+
+/* ==========================================
+   HERO
+========================================== */
+
+.enchant-header{
+
+    position:relative;
+
+    min-height:55vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.enchant-header .hero{
+
+    width:100%;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.enchant-header .hero-title{
+
+    font-size:72px;
+
+    margin-bottom:20px;
+
+}
+
+.enchant-header .hero-description{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#c8d2dd;
+
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.enchant-search{
+
+    margin-top:40px;
+
+}
+
+.search-box{
+
+    max-width:800px;
+
+    margin:40px auto;
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    height:72px;
+
+    padding:0 30px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(20,25,35,.70);
+
+    backdrop-filter:blur(18px);
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.35s;
+
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:
+
+        0 0 30px rgba(69,255,132,.18);
+
+}
+
+.search-box input::placeholder{
+
+    color:#93a0af;
+
+}
+
+/* ==========================================
+   FILTERS
+========================================== */
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.filter{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.filter:hover{
+
+    transform:translateY(-3px);
+
+    border-color:var(--primary);
+
+}
+
+.filter.active{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.enchant-grid{
+
+    width:100%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    padding:30px 0 120px;
+
+}
+/* ==========================================
+   ENCHANT CARD
+========================================== */
+
+.enchant-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(20,25,35,.72);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+    cursor:pointer;
+
+}
+
+.enchant-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(69,255,132,.35);
+
+    box-shadow:
+
+        0 25px 60px rgba(69,255,132,.15);
+
+}
+
+/* ==========================================
+   SHINE EFFECT
+========================================== */
+
+.enchant-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150%;
+
+    left:-70%;
+
+    width:45%;
+
+    height:350%;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(255,255,255,.18),
+
+            transparent
+
+        );
+
+    transform:rotate(25deg);
+
+    transition:1s;
+
+}
+
+.enchant-card:hover::before{
+
+    left:180%;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.enchant-name{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:12px;
+
+}
+
+.enchant-description{
+
+    color:#c7d0d9;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    margin-bottom:22px;
+
+}
+
+/* ==========================================
+   RARITY BADGE
+========================================== */
+
+.enchant-rarity{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    margin-bottom:20px;
+
+}
+
+/* Common */
+
+.rarity-common{
+
+    background:#555;
+
+    color:white;
+
+}
+
+/* Rare */
+
+.rarity-rare{
+
+    background:#1976d2;
+
+    color:white;
+
+}
+
+/* Epic */
+
+.rarity-epic{
+
+    background:#8e24aa;
+
+    color:white;
+
+}
+
+/* Legendary */
+
+.rarity-legendary{
+
+    background:#ff9800;
+
+    color:#111;
+
+}
+
+/* Mythic */
+
+.rarity-mythic{
+
+    background:#d50000;
+
+    color:white;
+
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.enchant-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:18px;
+
+    color:#aeb8c3;
+
+    font-size:14px;
+
+}
+
+.enchant-level{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.enchant-type{
+
+    opacity:.85;
+
+}
+
+/* ==========================================
+   ITEMS
+========================================== */
+
+.enchant-items{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.item-tag{
+
+    padding:8px 14px;
+
+    border-radius:10px;
+
+    background:rgba(69,255,132,.12);
+
+    border:1px solid rgba(69,255,132,.25);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.enchant-button{
+
+    margin-top:30px;
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--primary),
+            #73ffab
+        );
+
+    color:#111;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.enchant-button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 12px 30px rgba(69,255,132,.25);
+
+}
+
+/* ==========================================
+   EMPTY RESULT
+========================================== */
+
+.no-results{
+
+    grid-column:1/-1;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    border-radius:24px;
+
+    background:rgba(20,25,35,.70);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.no-results h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.no-results p{
+
+    color:#bfc8d4;
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.enchant-loading{
+
+    grid-column:1/-1;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+    color:#cfd8e2;
+
+    font-size:22px;
+
+}
+/* ==========================================
+   ENCHANT MODAL
+========================================== */
+
+.enchant-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    background:rgba(0,0,0,.72);
+
+    backdrop-filter:blur(10px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s ease;
+
+    z-index:99999;
+
+}
+
+.enchant-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.modal-content{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:850px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    border-radius:28px;
+
+    background:#131923;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.45);
+
+    animation:modalOpen .35s ease;
+
+}
+
+@keyframes modalOpen{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:35px 40px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.modal-header h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.modal-rarity{
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   CLOSE
+========================================== */
+
+.modal-close{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.modal-close:hover{
+
+    background:#ff4b4b;
+
+    transform:rotate(90deg);
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+.modal-body{
+
+    padding:40px;
+
+}
+
+.modal-section{
+
+    margin-bottom:35px;
+
+}
+
+.modal-section:last-child{
+
+    margin-bottom:0;
+
+}
+
+.modal-section h3{
+
+    font-size:22px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.modal-section p{
+
+    color:#c8d2dd;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+   TAGS
+========================================== */
+
+.modal-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.modal-tag{
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    background:rgba(69,255,132,.10);
+
+    border:1px solid rgba(69,255,132,.25);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   LEVEL BOX
+========================================== */
+
+.modal-level{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 24px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.modal-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin:30px 0;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.modal-content::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+
+    background:rgba(69,255,132,.45);
+
+    border-radius:20px;
+
+}
+
+.modal-content::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .modal-content{
+
+        max-height:95vh;
+
+        border-radius:20px;
+
+    }
+
+    .modal-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:30px;
+
+    }
+
+    .modal-header h2{
+
+        font-size:30px;
+
+    }
+
+    .modal-body{
+
+        padding:30px;
+
+    }
+
+    .modal-close{
+
+        top:15px;
+
+        right:15px;
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+}
+/* ==========================================
+   RARITY COLORS
+========================================== */
+
+.modal-rarity.rarity-common{
+
+    background:#5d6470;
+
+    color:#ffffff;
+
+}
+
+.modal-rarity.rarity-rare{
+
+    background:#1976d2;
+
+    color:#ffffff;
+
+}
+
+.modal-rarity.rarity-epic{
+
+    background:#8e24aa;
+
+    color:#ffffff;
+
+}
+
+.modal-rarity.rarity-legendary{
+
+    background:#ff9800;
+
+    color:#111111;
+
+}
+
+.modal-rarity.rarity-mythic{
+
+    background:#d50000;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   SEARCH ANIMATION
+========================================== */
+
+.search-box{
+
+    animation:fadeDown .8s ease;
+
+}
+
+.search-box input{
+
+    transition:
+        border-color .3s,
+        box-shadow .3s,
+        transform .3s;
+
+}
+
+.search-box input:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.search-box input:focus{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   GRID ANIMATION
+========================================== */
+
+.enchant-card{
+
+    animation:cardFade .5s ease;
+
+}
+
+@keyframes cardFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   MODAL TAG HOVER
+========================================== */
+
+.modal-tag{
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease;
+
+}
+
+.modal-tag:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(69,255,132,.18);
+
+}
+
+/* ==========================================
+   ITEM TAG HOVER
+========================================== */
+
+.item-tag{
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+
+}
+
+.item-tag:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(69,255,132,.18);
+
+}
+
+/* ==========================================
+   CARD BORDER GLOW
+========================================== */
+
+.enchant-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:22px;
+
+    border:1px solid transparent;
+
+    transition:.35s;
+
+    pointer-events:none;
+
+}
+
+.enchant-card:hover::after{
+
+    border-color:rgba(69,255,132,.18);
+
+}
+
+/* ==========================================
+   HERO TITLE
+========================================== */
+
+.enchant-header .hero-title{
+
+    animation:titleGlow 5s ease-in-out infinite;
+
+}
+
+@keyframes titleGlow{
+
+    0%{
+
+        text-shadow:
+
+            0 0 0 rgba(69,255,132,0);
+
+    }
+
+    50%{
+
+        text-shadow:
+
+            0 0 25px rgba(69,255,132,.35);
+
+    }
+
+    100%{
+
+        text-shadow:
+
+            0 0 0 rgba(69,255,132,0);
+
+    }
+
+}
+
+/* ==========================================
+   MODAL BACKDROP
+========================================== */
+
+.enchant-modal.show{
+
+    animation:modalBackdrop .35s ease;
+
+}
+
+@keyframes modalBackdrop{
+
+    from{
+
+        background:rgba(0,0,0,0);
+
+    }
+
+    to{
+
+        background:rgba(0,0,0,.72);
+
+    }
+
+}
+
+/* ==========================================
+   CUSTOM SCROLLBAR
+========================================== */
+
+.enchant-grid::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.enchant-grid::-webkit-scrollbar-thumb{
+
+    background:rgba(69,255,132,.45);
+
+    border-radius:20px;
+
+}
+
+/* Firefox */
+
+*{
+
+    scrollbar-width:thin;
+
+    scrollbar-color:rgba(69,255,132,.45) transparent;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:992px){
+
+    .filter-buttons{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        padding-bottom:10px;
+
+    }
+
+    .filter-buttons::-webkit-scrollbar{
+
+        height:6px;
+
+    }
+
+    .filter-buttons::-webkit-scrollbar-thumb{
+
+        background:rgba(69,255,132,.35);
+
+        border-radius:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .search-box{
+
+        margin:30px auto;
+
+    }
+
+    .search-box input{
+
+        height:62px;
+
+        font-size:16px;
+
+        padding:0 20px;
+
+    }
+
+    .enchant-name{
+
+        font-size:24px;
+
+    }
+
+    .enchant-description{
+
+        font-size:14px;
+
+    }
+
+    .enchant-button{
+
+        height:46px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .enchant-header{
+
+        min-height:45vh;
+
+    }
+
+    .enchant-header .hero-title{
+
+        font-size:52px;
+
+    }
+
+    .enchant-header .hero-description{
+
+        font-size:16px;
+
+    }
+
+    .filter{
+
+        font-size:13px;
+
+        padding:10px 16px;
+
+    }
+
+    .enchant-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .modal-header h2{
+
+        font-size:26px;
+
+    }
+
+    .modal-section h3{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media(max-width:400px){
+
+    .enchant-header .hero-title{
+
+        font-size:42px;
+
+    }
+
+    .modal-body{
+
+        padding:22px;
+
+    }
+
+}

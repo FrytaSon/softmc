@@ -1,0 +1,626 @@
+/* ==========================================
+   SoftMC.eu
+   Cards
+========================================== */
+
+.card{
+
+    position:relative;
+
+    background:rgba(20,25,35,.72);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:
+
+        0 15px 45px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(69,255,132,.35);
+
+    box-shadow:
+
+        0 25px 60px rgba(69,255,132,.15);
+
+}
+
+/* ==========================================
+   Glow
+========================================== */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(69,255,132,.08),
+
+        transparent 60%
+
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+    pointer-events:none;
+
+}
+
+.card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================
+   Shine
+========================================== */
+
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150%;
+
+    left:-60%;
+
+    width:45%;
+
+    height:350%;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(255,255,255,.18),
+
+            transparent
+
+        );
+
+    transform:rotate(25deg);
+
+    transition:1s;
+
+}
+
+.card:hover::after{
+
+    left:180%;
+
+}
+
+/* ==========================================
+   Images
+========================================== */
+
+.card-image{
+
+    width:100%;
+
+    height:280px;
+
+    overflow:hidden;
+
+}
+
+.card-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.55s;
+
+}
+
+.card:hover .card-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Content
+========================================== */
+
+.card-content{
+
+    padding:35px;
+
+}
+
+.card-title{
+
+    font-size:30px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.card-text{
+
+    color:#cbd4dd;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   Button
+========================================== */
+
+.card-button{
+
+    margin-top:25px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #79ffb0
+
+    );
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.card-button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   Gamemode Grid
+========================================== */
+
+.gamemode-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.gamemode-card{
+
+    position:relative;
+
+}
+
+.gamemode-card .badge{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    background:rgba(69,255,132,.18);
+
+    color:#58ff92;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    z-index:5;
+
+    backdrop-filter:blur(12px);
+
+}
+
+/* ==========================================
+   Stats
+========================================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    text-align:center;
+
+    padding:45px;
+
+}
+
+.stat-number{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.stat-title{
+
+    color:#bfc8d4;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+   Features
+========================================== */
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    padding:45px 35px;
+
+    text-align:center;
+
+}
+
+.feature-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    background:rgba(69,255,132,.12);
+
+    color:var(--primary);
+
+}
+
+.feature-title{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+    color:white;
+
+}
+
+.feature-text{
+
+    color:#bfc8d4;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   Staff
+========================================== */
+
+.staff-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.staff-card{
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+.staff-avatar{
+
+    width:120px;
+
+    height:120px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:2px solid rgba(69,255,132,.25);
+
+}
+
+.staff-avatar img{
+
+    width:100%;
+
+}
+
+.staff-name{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.staff-rank{
+
+    margin-top:8px;
+
+    color:var(--primary);
+
+}
+
+.staff-description{
+
+    margin-top:15px;
+
+    color:#bcc5cf;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   News
+========================================== */
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.news-card{
+
+    overflow:hidden;
+
+}
+
+.news-image{
+
+    height:220px;
+
+}
+
+.news-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.news-body{
+
+    padding:30px;
+
+}
+
+.news-date{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+.news-title{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.news-text{
+
+    color:#c5ced8;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   Gallery
+========================================== */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.gallery-item{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.45s;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:1200px){
+
+    .staff-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .gamemode-grid,
+    .features-grid,
+    .stats-grid,
+    .news-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .staff-grid,
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card-title{
+
+        font-size:24px;
+
+    }
+
+    .stat-number{
+
+        font-size:42px;
+
+    }
+
+}

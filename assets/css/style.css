@@ -1,0 +1,2016 @@
+/* ===========================================
+   SoftMC.eu
+   style.css
+   Part 1
+=========================================== */
+
+:root{
+
+    --primary:#45ff84;
+    --primary-dark:#2ed96b;
+
+    --background:#080b11;
+    --background2:#10151f;
+
+    --card:rgba(22,27,34,.78);
+
+    --white:#ffffff;
+    --gray:#bfc8d3;
+
+    --border:rgba(255,255,255,.08);
+
+    --shadow:0 0 35px rgba(69,255,132,.18);
+
+    --transition:.30s ease;
+
+    --radius:18px;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+        radial-gradient(circle at top,#182638 0%,#0b1018 40%,#080b11 100%);
+
+    color:white;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+/* =======================
+Scrollbar
+======================= */
+
+::-webkit-scrollbar{
+
+    width:11px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b1018;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:100px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#63ff99;
+
+}
+
+/* =======================
+Particles
+======================= */
+
+#particles{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+}
+
+/* =======================
+Header
+======================= */
+
+header{
+
+    position:relative;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+}
+
+/* tło */
+
+header::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(rgba(0,0,0,.55),
+        rgba(0,0,0,.75)),
+
+        url("../img/hero.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    transform:scale(1.05);
+
+    z-index:-2;
+
+}
+
+/* zielona poświata */
+
+header::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    left:50%;
+
+    top:-280px;
+
+    transform:translateX(-50%);
+
+    background:radial-gradient(circle,
+    rgba(69,255,132,.28),
+    transparent 70%);
+
+    filter:blur(60px);
+
+    z-index:-1;
+
+}
+
+/* =======================
+Navbar
+======================= */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:88px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 7%;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+nav.scrolled{
+
+    background:rgba(10,13,18,.78);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.logo img{
+
+    width:210px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:38px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/* =======================
+Button
+======================= */
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    font-family:inherit;
+
+}
+
+.join-nav button{
+
+    padding:14px 30px;
+
+    background:var(--primary);
+
+    color:#111;
+
+    font-weight:700;
+
+    border-radius:12px;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.join-nav button:hover{
+
+    transform:translateY(-4px);
+
+    background:#67ff9d;
+
+}
+
+/* =======================
+Hero
+======================= */
+
+.hero{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:150px 8% 90px;
+
+}
+
+.hero-logo{
+
+    width:390px;
+
+    margin-bottom:35px;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.hero h1{
+
+    font-size:78px;
+
+    line-height:1;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.hero p{
+
+    max-width:620px;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    font-size:20px;
+
+}
+
+.hero p b{
+
+    color:var(--primary);
+
+}
+
+/* =======================
+Hero Buttons
+======================= */
+
+.hero-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.hero-buttons button{
+
+    background:var(--primary);
+
+    color:#111;
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-buttons button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.hero-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    transition:.35s;
+
+}
+
+.hero-buttons a:hover{
+
+    background:rgba(255,255,255,.06);
+
+    border-color:var(--primary);
+
+}
+
+/* =======================
+Server Card
+======================= */
+
+.hero-server{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.status-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    backdrop-filter:blur(20px);
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.status-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(69,255,132,.45);
+
+    box-shadow:0 0 35px rgba(69,255,132,.12);
+
+}
+
+.status-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:14px;
+
+    font-size:18px;
+
+}
+
+.status-card p{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+/* =======================
+Section title
+======================= */
+
+section{
+
+    padding:120px 8%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+    font-size:54px;
+
+    margin-bottom:20px;
+
+}
+
+.section-title p{
+
+    color:var(--gray);
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* =======================
+Animations
+======================= */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+/* ===========================================
+   SoftMC.eu
+   style.css
+   Part 2
+===========================================*/
+
+/* =======================
+   GAMEMODES
+======================= */
+
+.gamemode-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+
+}
+
+.gamemode-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.gamemode-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 40px rgba(69,255,132,.20);
+
+    border-color:rgba(69,255,132,.45);
+
+}
+
+.gamemode-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.gamemode-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gamemode-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        transparent 25%,
+
+        rgba(0,0,0,.82)
+
+    );
+
+    z-index:1;
+
+}
+
+.card-content{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:35px;
+
+    z-index:2;
+
+}
+
+.card-content h3{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.card-content p{
+
+    line-height:1.8;
+
+    color:#d6dce5;
+
+}
+
+.card-button{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:#111;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.card-button:hover{
+
+    transform:translateY(-3px);
+
+    background:#6dff9d;
+
+}
+
+/* =======================
+   STATS
+======================= */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.stat-box{
+
+    background:var(--card);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:45px;
+
+    text-align:center;
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(69,255,132,.40);
+
+    box-shadow:0 0 30px rgba(69,255,132,.15);
+
+}
+
+.stat-box h3{
+
+    font-size:60px;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.stat-box span{
+
+    color:#d1d7de;
+
+    font-size:18px;
+
+}
+
+/* =======================
+   FEATURES
+======================= */
+
+.features{
+
+    background:linear-gradient(
+
+        to bottom,
+
+        transparent,
+
+        rgba(255,255,255,.02)
+
+    );
+
+}
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.feature{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    border-radius:22px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    backdrop-filter:blur(18px);
+
+}
+
+.feature:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(69,255,132,.35);
+
+    box-shadow:0 0 30px rgba(69,255,132,.12);
+
+}
+
+.feature{
+
+    font-size:52px;
+
+}
+
+.feature h3{
+
+    margin-top:18px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+.feature p{
+
+    color:#c8ced7;
+
+    line-height:1.8;
+
+}
+
+/* =======================
+   DISCORD
+======================= */
+
+.discord-box{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(69,255,132,.10),
+
+        rgba(255,255,255,.03)
+
+    );
+
+    border:1px solid rgba(69,255,132,.25);
+
+    backdrop-filter:blur(25px);
+
+}
+
+.discord-box h2{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+}
+
+.discord-box p{
+
+    color:#d1d7de;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.discord-box a{
+
+    display:inline-block;
+
+    padding:18px 38px;
+
+    background:var(--primary);
+
+    color:#111;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    border-radius:14px;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.discord-box a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer{
+
+    margin-top:120px;
+
+    padding:80px 8%;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    background:#05070b;
+
+    text-align:center;
+
+}
+
+footer img{
+
+    width:170px;
+
+    margin-bottom:30px;
+
+}
+
+footer p{
+
+    color:#9ea8b6;
+
+    margin:10px 0;
+
+}
+
+footer strong{
+
+    color:var(--primary);
+
+}
+
+/* =======================
+   GLOW
+======================= */
+
+.glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(69,255,132,.12);
+
+    filter:blur(120px);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* =======================
+   SCROLL ANIMATION
+======================= */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* =======================
+   HOVER EFFECTS
+======================= */
+
+button,
+a{
+
+    transition:.35s;
+
+}
+
+button:hover,
+a:hover{
+
+    filter:brightness(1.05);
+
+}
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+::selection{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+/* ===========================================
+   SoftMC.eu
+   style.css
+   Part 3
+===========================================*/
+
+/* =======================
+   BACKGROUND DECORATIONS
+======================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:-300px;
+    left:-300px;
+    width:700px;
+    height:700px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+        rgba(69,255,132,.12),
+        transparent 70%);
+    filter:blur(120px);
+    z-index:-5;
+    animation:moveGlow1 18s ease-in-out infinite;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    right:-300px;
+    bottom:-300px;
+    width:800px;
+    height:800px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+        rgba(20,180,255,.08),
+        transparent 70%);
+    filter:blur(140px);
+    z-index:-5;
+    animation:moveGlow2 22s ease-in-out infinite;
+}
+
+@keyframes moveGlow1{
+
+    0%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(120px,60px);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+
+}
+
+@keyframes moveGlow2{
+
+    0%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(-140px,-80px);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+
+}
+
+/* =======================
+   FLOATING CARDS
+======================= */
+
+.gamemode-card,
+.feature,
+.stat-box,
+.status-card{
+
+    animation:cardFloat 7s ease-in-out infinite;
+
+}
+
+.gamemode-card:nth-child(2){
+
+    animation-delay:1s;
+
+}
+
+.feature:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.feature:nth-child(3){
+
+    animation-delay:.8s;
+
+}
+
+.feature:nth-child(4){
+
+    animation-delay:1.2s;
+
+}
+
+.feature:nth-child(5){
+
+    animation-delay:1.6s;
+
+}
+
+.feature:nth-child(6){
+
+    animation-delay:2s;
+
+}
+
+@keyframes cardFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =======================
+   SHINE EFFECT
+======================= */
+
+.gamemode-card::after,
+.feature::after,
+.stat-box::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-80%;
+
+    width:40%;
+
+    height:300%;
+
+    transform:rotate(25deg);
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.15),
+
+        transparent
+
+    );
+
+    transition:1s;
+
+}
+
+.gamemode-card:hover::after,
+.feature:hover::after,
+.stat-box:hover::after{
+
+    left:170%;
+
+}
+
+/* =======================
+   HERO TEXT
+======================= */
+
+.hero h1{
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #ffffff,
+
+            #7effae,
+
+            #ffffff
+
+        );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-size:300%;
+
+    animation:titleAnimation 7s linear infinite;
+
+}
+
+@keyframes titleAnimation{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+/* =======================
+   HERO IMAGE
+======================= */
+
+.hero-logo{
+
+    filter:
+
+    drop-shadow(0 0 20px rgba(69,255,132,.30))
+    drop-shadow(0 0 60px rgba(69,255,132,.20));
+
+}
+
+/* =======================
+   BUTTON RIPPLE
+======================= */
+
+.hero-buttons button,
+.join-nav button,
+.discord-box a{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-buttons button::before,
+.join-nav button::before,
+.discord-box a::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    width:0;
+
+    height:0;
+
+    background:rgba(255,255,255,.20);
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.5s;
+
+}
+
+.hero-buttons button:hover::before,
+.join-nav button:hover::before,
+.discord-box a:hover::before{
+
+    width:500px;
+
+    height:500px;
+
+}
+
+/* =======================
+   IMAGE OVERLAY
+======================= */
+
+.gamemode-card img{
+
+    filter:
+
+    brightness(.85)
+    saturate(1.15);
+
+}
+
+.gamemode-card:hover img{
+
+    filter:
+
+    brightness(1)
+    saturate(1.3);
+
+}
+
+/* =======================
+   SECTION SPACING
+======================= */
+
+#gamemodes{
+
+    padding-top:150px;
+
+}
+
+#stats{
+
+    padding-top:140px;
+
+}
+
+.features{
+
+    padding-top:140px;
+
+}
+
+#discord{
+
+    padding-top:140px;
+
+}
+
+/* =======================
+   GLASS PANEL
+======================= */
+
+.glass{
+
+    background:
+
+        rgba(255,255,255,.04);
+
+    border:
+
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+
+        blur(18px);
+
+}
+
+/* =======================
+   PULSE ONLINE
+======================= */
+
+.online{
+
+    color:#58ff92;
+
+    position:relative;
+
+}
+
+.online::before{
+
+    content:"";
+
+    width:10px;
+
+    height:10px;
+
+    background:#58ff92;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+    margin-right:10px;
+
+    animation:pulse 1.6s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(88,255,146,.7);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 14px rgba(88,255,146,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(88,255,146,0);
+
+    }
+
+}
+
+/* =======================
+   LOADING PLACEHOLDERS
+======================= */
+
+.loading{
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.05),
+
+        rgba(255,255,255,.12),
+
+        rgba(255,255,255,.05)
+
+    );
+
+    background-size:200%;
+
+    animation:loading 1.4s infinite;
+
+    border-radius:10px;
+
+}
+
+@keyframes loading{
+
+    from{
+
+        background-position:200%;
+
+    }
+
+    to{
+
+        background-position:-200%;
+
+    }
+
+}
+/* ===========================================
+   SoftMC.eu
+   style.css
+   Part 4
+===========================================*/
+
+/* =======================
+   MOBILE MENU BUTTON
+======================= */
+
+.mobile-toggle{
+
+    display:none;
+
+    width:50px;
+    height:50px;
+
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.mobile-toggle:hover{
+
+    border-color:var(--primary);
+
+}
+
+.mobile-toggle span{
+
+    position:relative;
+
+    width:28px;
+    height:2px;
+
+    background:white;
+
+    transition:.35s;
+
+}
+
+.mobile-toggle span::before,
+.mobile-toggle span::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:28px;
+    height:2px;
+
+    background:white;
+
+    transition:.35s;
+
+}
+
+.mobile-toggle span::before{
+
+    top:-8px;
+
+}
+
+.mobile-toggle span::after{
+
+    bottom:-8px;
+
+}
+
+.mobile-toggle.active span{
+
+    background:transparent;
+
+}
+
+.mobile-toggle.active span::before{
+
+    top:0;
+
+    transform:rotate(45deg);
+
+}
+
+.mobile-toggle.active span::after{
+
+    bottom:0;
+
+    transform:rotate(-45deg);
+
+}
+
+/* =======================
+   IMAGE EFFECTS
+======================= */
+
+img{
+
+    transition:.5s;
+
+}
+
+.hero-logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+.gamemode-card:hover img{
+
+    transform:scale(1.08) rotate(.5deg);
+
+}
+
+/* =======================
+   LINKS
+======================= */
+
+a{
+
+    color:inherit;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+/* =======================
+   TABLET
+======================= */
+
+@media(max-width:1200px){
+
+.hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.hero-server{
+
+    margin-top:60px;
+
+}
+
+.gamemode-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.features-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media(max-width:900px){
+
+nav{
+
+    padding:0 25px;
+
+}
+
+nav ul{
+
+    position:fixed;
+
+    top:88px;
+
+    right:-100%;
+
+    width:270px;
+
+    height:calc(100vh - 88px);
+
+    background:#11161f;
+
+    flex-direction:column;
+
+    padding:40px;
+
+    transition:.4s;
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+}
+
+nav ul.active{
+
+    right:0;
+
+}
+
+.mobile-toggle{
+
+    display:flex;
+
+}
+
+.join-nav{
+
+    display:none;
+
+}
+
+.hero{
+
+    padding-top:140px;
+
+}
+
+.hero-logo{
+
+    width:280px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.hero-buttons button,
+.hero-buttons a{
+
+    width:100%;
+
+}
+
+.hero-server{
+
+    grid-template-columns:1fr;
+
+}
+
+.features-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+}
+
+.discord-box{
+
+    padding:45px 25px;
+
+}
+
+.discord-box h2{
+
+    font-size:34px;
+
+}
+
+footer{
+
+    padding:60px 25px;
+
+}
+
+}
+
+/* =======================
+   SMALL PHONES
+======================= */
+
+@media(max-width:500px){
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero-logo{
+
+    width:220px;
+
+}
+
+.card-content{
+
+    padding:25px;
+
+}
+
+.card-content h3{
+
+    font-size:26px;
+
+}
+
+.status-card{
+
+    padding:25px;
+
+}
+
+.status-card p{
+
+    font-size:24px;
+
+}
+
+.stat-box h3{
+
+    font-size:42px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+}
+
+/* =======================
+   CUSTOM ANIMATIONS
+======================= */
+
+.scale-in{
+
+    animation:scaleIn .6s ease;
+
+}
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.rotate{
+
+    animation:rotate 20s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* =======================
+   FADE
+======================= */
+
+.fade{
+
+    opacity:.7;
+
+    transition:.3s;
+
+}
+
+.fade:hover{
+
+    opacity:1;
+
+}
+
+/* =======================
+   SMOOTH SHADOWS
+======================= */
+
+.status-card,
+.feature,
+.stat-box,
+.gamemode-card{
+
+    will-change:transform;
+
+}
+
+/* =======================
+   END
+======================= */
+.highlight{
+
+    color:#45ff84;
+
+    font-weight:700;
+
+}
