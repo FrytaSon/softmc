@@ -1,5 +1,5 @@
 /* ==========================================
-   SoftMC.eu
+   SoftMC.PL
    app.js
 ========================================== */
 
@@ -474,5 +474,5 @@ behavior:"smooth"
    COPYRIGHT
 ========================================== */
 
-console.log("%cSoftMC.eu","color:#45ff84;font-size:28px;font-weight:bold;");
-console.log("Website created with ❤️");
+console.log("%cSoftMC.PL","color:#45ff84;font-size:28px;font-weight:bold;");
+console.log("Website created by FRYTA with ❤️");
