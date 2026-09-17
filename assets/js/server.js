@@ -1,4 +1,4 @@
-const SERVER_IP = "softmc.eu";
+const SERVER_IP = "softmc.pl";
 
 const elements = {
     status: document.getElementById("server-status"),
